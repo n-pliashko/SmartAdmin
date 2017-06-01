@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+        "title":"Home",
+        "route":"home",
+        "icon":"fa fa-lg fa-fw fa-home"
+    },
+    {
+      "title": "My Test",
+      "icons":"",
+      "route": "/my_test"
+    },
+    {
+      "title": "Item Upload",
+      "icons":"",
+      "route": "/item_upload"
+    }
+
+  ]
+}
