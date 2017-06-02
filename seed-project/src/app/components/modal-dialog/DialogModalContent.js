@@ -33,17 +33,22 @@ export default class DialogModalContent extends React.Component{
     let data = this.state;
     let inputs = data.attributes.map((one, key) => {
       let label = '', className = 'form-control ';
+      let readonly = false;
       if (one.type != 'hidden') {
-        label = <label className="col-md-2 control-label" style={{fontWeight:'bold'}}>{one.name.toUpperCase()}</label>
+        label = <label className="col-md-2 control-label" style={{fontWeight:'bold'}}>{one.title.toUpperCase()}</label>
       }
       if (one.class != 'undefined') {
         className += one.class;
       }
 
-      let input = <input className={className} type={one.type} name={one.input} value={data.row[one.input]} onChange={this.handleInputChange}/>;
+      if (one.readonly != 'undefined' && !!one.readonly) {
+        readonly = true;
+      }
+
+      let input = <input className={className} type={one.type} name={one.name} value={data.row[one.name]} onChange={this.handleInputChange} readOnly={readonly}/>;
       if (one.type == 'date') {
         input = <label><i  className="fa fa-calendar"/><UiDatepicker
-                    name={one.input} value={data.row[one.input]} onChange={this.handleInputChange}
+                    name={one.name} value={data.row[one.name]} onChange={this.handleInputChange}
                     className={className} changesMonth={true}
                     data-date-format="dd/mm/yy"/>
         </label>;

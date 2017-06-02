@@ -6,9 +6,14 @@
         "icon":"fa fa-lg fa-fw fa-home"
     },
     {
-      "title": "Gettexts",
+      "title": "Translations",
       "icons":"",
-      "route": "/gettexts"
+      "items": [
+        {
+        "title": "Gettexts",
+        "route": "/gettexts"
+      }
+      ]
     },
     {
       "title": "Item Upload",
