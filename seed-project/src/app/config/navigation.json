@@ -6,9 +6,9 @@
         "icon":"fa fa-lg fa-fw fa-home"
     },
     {
-      "title": "My Test",
+      "title": "Gettexts",
       "icons":"",
-      "route": "/my_test"
+      "route": "/gettexts"
     },
     {
       "title": "Item Upload",

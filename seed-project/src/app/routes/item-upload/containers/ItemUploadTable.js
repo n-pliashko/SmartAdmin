@@ -20,7 +20,7 @@ export default class ItemUpload extends React.Component {
       });
 
       $('#itemUpload').DataTable( {
-        dom: "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs text-right'Bl>r>" +
+        dom: "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs buttons-right'Bl>r>" +
         "t" +
         "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
         oLanguage: {
@@ -33,6 +33,13 @@ export default class ItemUpload extends React.Component {
           dataSrc: 'response',
         },
         columns: [
+          {
+            searchable: false,
+            visible: false,
+            className: 'none',
+            orderable: false,
+            data: null,
+          },
           {data: "count"},
           {data: "date_updated"},
         ],
@@ -85,7 +92,7 @@ export default class ItemUpload extends React.Component {
               });
 
               return $('<div id="itemUploadHour-' + rowIdx + '"/>');
-            }
+            },
           }
         },
         stateSave: true,
@@ -99,12 +106,7 @@ export default class ItemUpload extends React.Component {
             }
           }
         ],
-        drawCallback: function( settings ) {
-          let node = this.api().table().node();
-          $(node).toggleClass( 'collapsed', true );
-          $(node).addClass('collapsed');
-          console.log(node);
-        },
+        order: [[ 1, 'asc' ]]
       });
     });
   }
@@ -125,6 +127,7 @@ export default class ItemUpload extends React.Component {
                     <table id="itemUpload" className="display collapsed table-responsive table-striped table-bordered" cellSpacing="0" width="100%">
                       <thead>
                       <tr>
+                        <th></th>
                         <th data-hide="phone">Items count</th>
                         <th data-hide="phone,tablet"><i
                           className="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"/>
