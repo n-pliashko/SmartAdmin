@@ -5,38 +5,168 @@
     "class": "",
     "readonly": false,
     "visible": true,
-    "title": "Name",
+    "title": "ID",
     "icon": "",
     "priority" : 1
   },
   {
-    "name": "name",
-    "type": "text",
+    "name": "created",
+    "type": "datetime",
     "class": "",
     "readonly": false,
     "visible": true,
-    "title": "Name",
-    "icon": "fa fa-fw fa-user",
+    "title": "Created date",
+    "icon": "",
     "priority" : 2
   },
   {
-    "name": "phone",
+    "name": "updated",
+    "type": "datetime",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Updated date",
+    "icon": "",
+    "priority" : 3
+  },
+  {
+    "name": "spec_content",
     "type": "text",
     "class": "",
     "readonly": false,
     "visible": true,
-    "title": "Phone",
-    "icon": "fa fa-fw fa-phone",
-    "priority" : 3
+    "title": "Spec_content",
+    "icon": "",
+    "priority" : 4
   },
   {
-    "name": "date",
-    "type": "date",
+    "name": "header",
+    "type": "text",
     "class": "",
     "readonly": false,
     "visible": true,
-    "title": "Date",
-    "icon": "fa fa-fw fa-calendar",
-    "priority" : 4
+    "title": "Header",
+    "icon": "",
+    "priority" : 5
+  },
+  {
+    "name": "header_pg",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Header_pg",
+    "icon": "",
+    "priority" : 6
+  },
+  {
+    "name": "header_acc",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "header_acc",
+    "icon": "",
+    "priority" : 7
+  },
+  {
+    "name": "header_gog",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Header_gog",
+    "icon": "",
+    "priority" : 8
+  },
+  {
+    "name": "header_cl",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "header_cl",
+    "icon": "",
+    "priority" : 9
+  },
+  {
+    "name": "description",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Description",
+    "icon": "",
+    "priority" : 10
+  },
+  {
+    "name": "description_pg",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Description_pg",
+    "icon": "",
+    "priority" : 11
+  },
+  {
+    "name": "description_acc",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Description_acc",
+    "icon": "",
+    "priority" : 12
+  },
+  {
+    "name": "description_gog",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Description_gog",
+    "icon": "",
+    "priority" : 11
+  },
+  {
+    "name": "description_cl",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Description_cl",
+    "icon": "",
+    "priority" : 11
+  },
+  {
+    "name": "meta_title",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Meta title",
+    "icon": "",
+    "priority" : 11
+  },
+  {
+    "name": "meta_description",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "Meta description",
+    "icon": "",
+    "priority" : 11
+  },
+  {
+    "name": "urls",
+    "type": "text",
+    "class": "",
+    "readonly": false,
+    "visible": true,
+    "title": "urls",
+    "icon": "",
+    "priority" : 11
   }
 ]

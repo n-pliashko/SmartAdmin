@@ -53,6 +53,11 @@ export default class DialogModalContent extends React.Component{
                     data-date-format="dd/mm/yy"/>
         </label>;
       }
+
+      if (one.type == 'textarea') {
+        input = <textarea name={one.name} onChange={this.handleInputChange} className={className} >{data.row[one.name]}</textarea>;
+      }
+
       return (
         <div key={key} className="form-group">
           {label}

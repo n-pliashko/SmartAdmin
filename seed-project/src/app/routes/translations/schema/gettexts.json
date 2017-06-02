@@ -5,13 +5,13 @@
     "class": "",
     "readonly": false,
     "visible": true,
-    "title": "Name",
+    "title": "ID",
     "icon": "",
     "priority" : 1
   },
   {
     "name": "name",
-    "type": "text",
+    "type": "textarea",
     "class": "",
     "readonly": false,
     "visible": true,
