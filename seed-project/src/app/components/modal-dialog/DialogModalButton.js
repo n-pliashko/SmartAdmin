@@ -24,11 +24,12 @@ export default class DialogModalButton extends React.Component {
   showDialog (e) {
     e.preventDefault();
 
-    let id = this.props.id;
+    let props = this.props;
+    let id = props.id;
 
     let $dialog = $('<div><p>Loading...</p></div>').dialog({
-      title: `<div class="widget-header">${this.props.header}</div>`,
-      width: 500,
+      title: `<div class="widget-header">${props.header}</div>`,
+      width: 800,
       maxHeight: 400,
       position: {
         my: 'center',
@@ -48,18 +49,19 @@ export default class DialogModalButton extends React.Component {
       $dialog.dialog('close');
     };
 
-    if (!!this.props.edit) {
+    if (!!props.edit) {
       $.ajax({
-        url: this.props.url,
+        url: props.url,
         dataType: 'json',
         cache: false,
-        data: {[this.props.data_url] : encodeURIComponent(this.props[this.props.data_url])},
+        data: {[props.data_url] : encodeURIComponent(props[props.data_url])},
         success: function (data) {
           data = data.aaData;
           let content = React.createElement(DialogModalContent, {
             closeDialog: closeDialog,
             attributes: this.props.attributes,
-            row: data[id - 1]
+            row: data[id - 1],
+            url: props.saveAction
           });
           ReactDOM.render(content, $dialog[0])
         }.bind(this),
@@ -69,19 +71,18 @@ export default class DialogModalButton extends React.Component {
       });
     }
 
-    if (!!this.props.delete) {
-      let content = React.createElement(deleteContent, {closeDialog: closeDialog, id: id, table: this.props.table, url: this.props.url});
+    if (!!props.delete) {
+      let content = React.createElement(deleteContent, {closeDialog: closeDialog, id: id, table: props.table, url: props.url});
       ReactDOM.render(content, $dialog[0])
     }
 
-    if (!!this.props.info) {
-      let props = this.props;
+    if (!!props.info) {
       $.ajax({
-        url: this.props.url,
+        url: props.url,
         dataType: 'json',
         cache: false,
         method: 'GET',
-        data: {[this.props.data_url] : encodeURIComponent(this.props[this.props.data_url])},
+        data: {[props.data_url] : encodeURIComponent(props[props.data_url])},
         success: function (data) {
           let content = '';
           if (props.template) {
@@ -92,7 +93,7 @@ export default class DialogModalButton extends React.Component {
           ReactDOM.render(content, $dialog[0])
         }.bind(this),
         error: function (xhr, status, err) {
-          console.error(this.props.url, status, err.toString());
+          console.error(props.url, status, err.toString());
         }.bind(this)
       });
     }

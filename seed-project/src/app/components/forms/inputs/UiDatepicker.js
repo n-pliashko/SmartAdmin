@@ -53,13 +53,15 @@ export default class UiDatepicker extends React.Component {
 
     if (props.changeMonth) options.changeMonth = props.changeMonth;
 
+    if (props.changeYear) options.changeYear = props.changeYear;
+
     element.datepicker(options);
   }
 
   render() {
     const {
       minRestrict, maxRestrict, changesMonth,
-      numberOfMonths, dateFormat, defaultDate, changeMonth,
+      numberOfMonths, dateFormat, defaultDate, changeMonth, changeYear,
       ...props
     } = {...this.props};
     return (

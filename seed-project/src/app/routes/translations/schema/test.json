@@ -1,0 +1,58 @@
+{
+  "schema": [
+    {
+      "name": "id",
+      "type": "hidden",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "ID",
+      "icon": "",
+      "priority": 1
+    },
+    {
+      "name": "name",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Name",
+      "icon": "fa fa-fw fa-user",
+      "priority": 2
+    },
+    {
+      "name": "company",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "",
+      "icon": "",
+      "priority": 3
+    },
+    {
+      "name": "phone",
+      "type": "phone",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Phone",
+      "icon": "fa fa-fw fa-phone",
+      "priority": 3
+    },
+    {
+      "name": "date",
+      "type": "datetime",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Date",
+      "icon": "fa fa-fw fa-calendar",
+      "priority": 4
+    }
+  ],
+  "getDataAjax" : "assets/api/tables/datatables.standard.json",
+  "saveAction" : "/",
+  "editUrl" : "assets/api/tables/datatables.standard.json",
+  "deleteAction" : ""
+}

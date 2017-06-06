@@ -1,25 +1,63 @@
 {
   "items": [
     {
-        "title":"Home",
-        "route":"home",
-        "icon":"fa fa-lg fa-fw fa-home"
+      "title": "Item Upload",
+      "icon":"",
+      "route": "/item_upload"
     },
     {
       "title": "Translations",
-      "icons":"",
+      "icon": "fa fa-lg fa-fw fa-table",
       "items": [
         {
-        "title": "Gettexts",
-        "route": "/gettexts"
-      }
+          "title": "Gettexts",
+          "route": "/gettexts"
+        },
+        {
+          "title": "Designers",
+          "route": "/designers"
+        },
+        {
+          "title": "Tints",
+          "route": "/tints"
+        },
+        {
+          "title": "Tint categories",
+          "route": "/tint_cats"
+        },
+        {
+          "title": "Pages",
+          "route": "/pages"
+        },
+        {
+          "title": "Page categories",
+          "route": "/page_cats"
+        },
+        {
+          "title": "Lens category",
+          "route": "/len_cats"
+        },
+        {
+          "title": "Categories",
+          "route": "/cats"
+        },
+        {
+          "title": "Omnis statuses",
+          "route": "/omnis_statuses"
+        },
+        {
+          "title": "Tabs",
+          "route": "/tabs"
+        },
+        {
+          "title": "User notifications",
+          "route": "/user_notifications_msg"
+        },
+        {
+          "title": "Category groups",
+          "route": "/category_groups"
+        }
       ]
-    },
-    {
-      "title": "Item Upload",
-      "icons":"",
-      "route": "/item_upload"
     }
-
   ]
 }

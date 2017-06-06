@@ -1,0 +1,57 @@
+{
+  "schema": [
+    {
+      "name": "id",
+      "type": "hidden",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "ID",
+      "icon": "",
+      "priority": 1
+    },
+    {
+      "name": "created",
+      "type": "date",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "title": "Created date",
+      "icon": "fa fa-fw fa-calendar"
+    },
+    {
+      "name": "updated",
+      "type": "date",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "title": "",
+      "icon": "fa fa-fw fa-calendar",
+      "priority": 2
+    },
+    {
+      "name": "description",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "",
+      "icon": "",
+      "priority": 3
+    },
+    {
+      "name": "urls",
+      "type": "textarea",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "",
+      "icon": "",
+      "priority": 10
+    }
+  ],
+  "getDataAjax": "",
+  "saveAction": "",
+  "editUrl": "",
+  "deleteAction": ""
+}

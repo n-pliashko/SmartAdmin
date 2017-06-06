@@ -1,42 +1,68 @@
-[
-  {
-    "name": "id",
-    "type": "hidden",
-    "class": "",
-    "readonly": false,
-    "visible": true,
-    "title": "ID",
-    "icon": "",
-    "priority" : 1
-  },
-  {
-    "name": "name",
-    "type": "textarea",
-    "class": "",
-    "readonly": false,
-    "visible": true,
-    "title": "Name",
-    "icon": "fa fa-fw fa-user",
-    "priority" : 2
-  },
-  {
-    "name": "phone",
-    "type": "text",
-    "class": "",
-    "readonly": false,
-    "visible": true,
-    "title": "Phone",
-    "icon": "fa fa-fw fa-phone",
-    "priority" : 3
-  },
-  {
-    "name": "date",
-    "type": "date",
-    "class": "",
-    "readonly": false,
-    "visible": true,
-    "title": "Date",
-    "icon": "fa fa-fw fa-calendar",
-    "priority" : 4
-  }
-]
+{
+  "schema": [
+    {
+      "name": "id",
+      "type": "hidden",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "ID",
+      "icon": "",
+      "priority": 1
+    },
+    {
+      "name": "created",
+      "type": "date",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "title": "Created date",
+      "icon": "fa fa-fw fa-calendar",
+      "priority": 2
+    },
+    {
+      "name": "updated",
+      "type": "date",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "title": "",
+      "icon": "fa fa-fw fa-calendar",
+      "priority": 3
+    },
+    {
+      "name": "label",
+      "type": "text",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "title": "Label",
+      "icon": "",
+      "priority": 4
+    },
+    {
+      "name": "urls",
+      "type": "text",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "title": "",
+      "icon": "",
+      "priority": 6
+    },
+    {
+      "name": "value",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "",
+      "icon": "",
+      "priority": 5
+    }
+  ],
+  "getDataAjax" : "",
+  "saveAction" : "",
+  "editUrl" : "",
+  "deleteAction" : ""
+}

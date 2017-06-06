@@ -19,7 +19,8 @@ export default class Table extends React.Component {
         "sLengthSelect": "form-control input-sm"
       });
 
-      let attributes = this.props.schema;
+      let schema = this.props.schema;
+      let attributes = schema.schema;
 
       let columns = [];
       attributes.map((one, key) => {
@@ -44,7 +45,7 @@ export default class Table extends React.Component {
         },
         autoWidth: false,
         stateSave: true,
-        ajax: 'assets/api/tables/datatables.standard.json',
+        ajax: schema.getDataAjax,
         columns: columns,
         buttons: [
           {
@@ -63,6 +64,18 @@ export default class Table extends React.Component {
             className: 'btn-sm',
             columns: ':not(:last-child)',
             columnDefs: [ {className: 'select-checkbox',targets:   0}]
+          },
+          {
+            extend: 'print',
+            text: '<i class="fa fa-print"/> Print',
+            titleAttr: 'Print all data on current page',
+            autoPrint: false,
+            exportOptions: {
+              columns: ':not(:last-child)',
+              modifier: {
+                page: 'current'
+              }
+            }
           }
         ]
       };
@@ -75,10 +88,10 @@ export default class Table extends React.Component {
           $(cell).parent('tr').attr('data-row-id', cellData.id);
           let button = <div className="btn-group">
             <DialogModalButton header="<h4>Editing</h4>" modal={true} edit={true} attributes={attributes} id={cellData.id}
-                               url="assets/api/tables/datatables.standard.json" data_url="id"/>
+                               url={schema.editUrl} saveAction={schema.saveAction} data_url="id"/>
             <DialogModalButton header="<h4><i class='fa fa-warning'/> Are you sure do you want to remove?</h4>"
                                modal={true} delete={true} id={cellData.id} table={this}
-                               url="" data_url="id"/>
+                               url={schema.deleteAction} data_url="id"/>
           </div>;
           ReactDOM.render(button, cell);
         },
@@ -86,20 +99,27 @@ export default class Table extends React.Component {
       }];
 
       $.merge(options.columns, button_columns);
-      options = $.extend({}, this.props.options, options);
+      if (this.props.options) {
+        options = $.extend({}, this.props.options, options);
+      }
       $('#' + this.props.identifier).DataTable(options);
     });
   }
 
   render() {
-    let thead = this.props.schema.map((one, key) => {
-      let icon = '';
+    let thead = this.props.schema.schema.map((one, key) => {
+      let icon = '', thClass = '';
       if (one.icon) {
         let className = "txt-color-blue hidden-md hidden-sm hidden-xs " + one.icon;
         icon = <i className={className}/>;
       }
+      let title = one.title;
+      if (title == '') {
+        title = one.name;
+        thClass = 'text-capitalize';
+      }
       return (
-          <th key={key} data-hide="phone,tablet">{icon}{one.title}</th>
+          <th key={key} className={thClass} data-hide="phone,tablet">{icon}{title}</th>
       );
     });
 
@@ -108,7 +128,6 @@ export default class Table extends React.Component {
         <div className="row">
           <BigBreadcrumbs items={this.props.breadcrumbs} icon="fa fa-fw fa-table"
                           className="col-xs-12 col-sm-7 col-md-7 col-lg-4"/>
-          <Stats />
         </div>
 
         <WidgetGrid>
