@@ -2,7 +2,7 @@
   "items": [
     {
       "title": "Item Upload",
-      "icon":"",
+      "icon":"fa fa-lg fa-fw fa-upload",
       "route": "/item_upload"
     },
     {
@@ -54,8 +54,40 @@
           "route": "/user_notifications_msg"
         },
         {
-          "title": "Category groups",
-          "route": "/category_groups"
+          "title": "Coatings",
+          "route": "/coatings"
+        },
+        {
+          "title": "Colours",
+          "route": "/colours"
+        },
+        {
+          "title": "Countries",
+          "route": "/countries"
+        },
+        {
+          "title": "Delivery methods",
+          "route": "/delivery_methods"
+        },
+        {
+          "title": "Frames",
+          "route": "/frames"
+        },
+        {
+          "title": "Lenses",
+          "route": "/lenses"
+        },
+        {
+          "title": "Payment systems",
+          "route": "/payment_systems"
+        },
+        {
+          "title": "Prescription used",
+          "route": "/presc_use"
+        },
+        {
+          "title": "Prescription used categories",
+          "route": "/presc_use_cats"
         }
       ]
     }

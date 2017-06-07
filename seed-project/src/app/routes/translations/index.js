@@ -99,6 +99,78 @@ export default {
           cb(null, m.default)
         })
       }
+    },
+    {
+      path: '/coatings',
+      getComponent(nextState, cb){
+        System.import('./containers/CoatingsTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: '/colours',
+      getComponent(nextState, cb){
+        System.import('./containers/ColoursTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: '/countries',
+      getComponent(nextState, cb){
+        System.import('./containers/CountriesTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: '/delivery_methods',
+      getComponent(nextState, cb){
+        System.import('./containers/DeliveryMethodsTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: '/frames',
+      getComponent(nextState, cb){
+        System.import('./containers/FramesTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: '/lenses',
+      getComponent(nextState, cb){
+        System.import('./containers/LensesTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: '/payment_systems',
+      getComponent(nextState, cb){
+        System.import('./containers/PaymentSystemsTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: '/presc_use',
+      getComponent(nextState, cb){
+        System.import('./containers/PrescriptionUsedTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: '/presc_use_cats',
+      getComponent(nextState, cb){
+        System.import('./containers/PrescUsedCategoriesTable').then((m)=> {
+          cb(null, m.default)
+        })
+      }
     }
   ]
 };

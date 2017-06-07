@@ -1,0 +1,118 @@
+{
+  "schema": [
+    {
+      "name": "id",
+      "type": "hidden",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "ID",
+      "icon": "",
+      "priority": 1
+    },
+    {
+      "name": "created",
+      "type": "datetime",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Created date",
+      "icon": "",
+      "priority": 2
+    },
+    {
+      "name": "updated",
+      "type": "datetime",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Updated date",
+      "icon": "",
+      "priority": 3
+    },
+    {
+      "name": "name",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Spec_content",
+      "icon": "",
+      "priority": 4
+    },
+    {
+      "name": "colour_slug",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Header",
+      "icon": "",
+      "priority": 5
+    },
+    {
+      "name": "heading",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Header_pg",
+      "icon": "",
+      "priority": 6
+    },
+    {
+      "name": "heading_pg",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "header_acc",
+      "icon": "",
+      "priority": 7
+    },
+    {
+      "name": "description_pg",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Description_pg",
+      "icon": "",
+      "priority": 11
+    },
+    {
+      "name": "meta_title",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Description_acc",
+      "icon": "",
+      "priority": 12
+    },
+    {
+      "name": "meta_description",
+      "type": "html",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "Meta description",
+      "icon": "",
+      "priority": 11
+    },
+    {
+      "name": "urls",
+      "type": "text",
+      "class": "",
+      "readonly": false,
+      "visible": true,
+      "title": "urls",
+      "icon": "",
+      "priority": 11
+    }
+  ],
+  "getDataAjax": "",
+  "saveAction": "",
+  "editUrl": "",
+  "deleteAction": ""
+}
