@@ -11,9 +11,9 @@ const history = syncHistoryWithStore(hashHistory, store);
 const routes = {
 
   path: '/',
-  indexRoute: { onEnter: (nextState, replace) => replace('/item_upload') },
+  indexRoute: { onEnter: (nextState, replace) => replace('/items/item_upload') },
   childRoutes: [
-    require('./routes/item-upload').default,
+    require('./routes/items').default,
     require('./routes/translations').default
   ]
 };

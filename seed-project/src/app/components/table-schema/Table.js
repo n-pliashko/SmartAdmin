@@ -12,7 +12,7 @@ export default class Table extends React.Component {
   }
 
   componentDidMount() {
-    System.import('script-loader!../../../assets/package/DataTables/datatables').then(() => {
+    System.import('script-loader!../../../assets/js/DataTables/datatables').then(() => {
 
       $.extend($.fn.dataTableExt.oStdClasses, {
         "sFilterInput": "form-control input-sm",

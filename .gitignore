@@ -1,0 +1,4 @@
+.idea
+.idea/*
+seed-project/node_modules/
+seed-project/node_modules/*

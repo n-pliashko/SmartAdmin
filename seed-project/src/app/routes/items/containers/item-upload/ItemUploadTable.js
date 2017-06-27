@@ -1,18 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 
-import {WidgetGrid, JarvisWidget}  from '../../../components'
-import DetailButton from '../../../components/modal-dialog/DetailButton'
+import {WidgetGrid, JarvisWidget}  from '../../../../components/index'
+import DetailButton from '../../../../components/modal-dialog/DetailButton'
 import Table from './Table'
-import DialogModalButton from '../../../components/modal-dialog/DialogModalButton'
+import DialogModalButton from '../../../../components/modal-dialog/DialogModalButton'
 import InfoContent from './InfoContent'
 
-require('../../../../assets/package/DataTables/datatables.min.css');
+require('../../../../../assets/js/DataTables/datatables.min.css');
 
 export default class ItemUpload extends React.Component {
 
   componentDidMount() {
-    System.import('script-loader!../../../../assets/package/DataTables/datatables').then(()=> {
+    System.import('script-loader!../../../../../assets/js/DataTables/datatables').then(()=> {
 
       $.extend($.fn.dataTableExt.oStdClasses, {
         "sFilterInput": "form-control input-sm",

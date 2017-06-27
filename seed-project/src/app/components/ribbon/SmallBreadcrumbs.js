@@ -26,6 +26,9 @@ const mapStateToProps = (state, ownProps) => {
     if (it.route == route) {
       chain.push(it.title)
     } else if (it.items) {
+      if (Object.values(it.items).findIndex(x => x.route == route) !== -1) {
+        chain.push(it.title)
+      }
       it.items.reduce(titleReducer, chain);
     }
     return chain

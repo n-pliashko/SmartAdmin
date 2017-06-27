@@ -1,9 +1,19 @@
 {
   "items": [
     {
-      "title": "Item Upload",
-      "icon":"fa fa-lg fa-fw fa-upload",
-      "route": "/item_upload"
+      "title": "Items",
+      "items": [
+        {
+          "title": "Item Upload",
+          "icon": "fa fa-lg fa-fw fa-upload",
+          "route": "/items/item_upload"
+        },
+        {
+          "title": "Images",
+          "icon": "fa fa-lg fa-fw fa-file-image-o",
+          "route": "/items/images"
+        }
+      ]
     },
     {
       "title": "Translations",
@@ -11,83 +21,83 @@
       "items": [
         {
           "title": "Gettexts",
-          "route": "/gettexts"
+          "route": "/translations/gettexts"
         },
         {
           "title": "Designers",
-          "route": "/designers"
+          "route": "/translations/designers"
         },
         {
           "title": "Tints",
-          "route": "/tints"
+          "route": "/translations/tints"
         },
         {
           "title": "Tint categories",
-          "route": "/tint_cats"
+          "route": "/translations/tint_cats"
         },
         {
           "title": "Pages",
-          "route": "/pages"
+          "route": "/translations/pages"
         },
         {
           "title": "Page categories",
-          "route": "/page_cats"
+          "route": "/translations/page_cats"
         },
         {
           "title": "Lens category",
-          "route": "/len_cats"
+          "route": "/translations/len_cats"
         },
         {
           "title": "Categories",
-          "route": "/cats"
+          "route": "/translations/cats"
         },
         {
           "title": "Omnis statuses",
-          "route": "/omnis_statuses"
+          "route": "/translations/omnis_statuses"
         },
         {
           "title": "Tabs",
-          "route": "/tabs"
+          "route": "/translations/tabs"
         },
         {
           "title": "User notifications",
-          "route": "/user_notifications_msg"
+          "route": "/translations/user_notifications_msg"
         },
         {
           "title": "Coatings",
-          "route": "/coatings"
+          "route": "/translations/coatings"
         },
         {
           "title": "Colours",
-          "route": "/colours"
+          "route": "/translations/colours"
         },
         {
           "title": "Countries",
-          "route": "/countries"
+          "route": "/translations/countries"
         },
         {
           "title": "Delivery methods",
-          "route": "/delivery_methods"
+          "route": "/translations/delivery_methods"
         },
         {
           "title": "Frames",
-          "route": "/frames"
+          "route": "/translations/frames"
         },
         {
           "title": "Lenses",
-          "route": "/lenses"
+          "route": "/translations/lenses"
         },
         {
           "title": "Payment systems",
-          "route": "/payment_systems"
+          "route": "/translations/payment_systems"
         },
         {
           "title": "Prescription used",
-          "route": "/presc_use"
+          "route": "/translations/presc_use"
         },
         {
           "title": "Prescription used categories",
-          "route": "/presc_use_cats"
+          "route": "/translations/presc_use_cats"
         }
       ]
     }

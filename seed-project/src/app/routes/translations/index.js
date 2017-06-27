@@ -1,11 +1,11 @@
-require('../../../assets/package/DataTables/datatables.min.css');
+require('../../../assets/js/DataTables/datatables.min.css');
 
 export default {
-  path: 'translations',
+  path: '/',
   component: require('../../components/common/Layout').default,
   childRoutes: [
     {
-      path: '/gettexts',
+      path: '/translations/gettexts',
       getComponent(nextState, cb){
         System.import('./containers/GettextsTable').then((m)=> {
           cb(null, m.default)
@@ -13,7 +13,7 @@ export default {
       }
     },
     {
-      path: '/designers',
+      path: '/translations/designers',
       getComponent(nextState, cb){
         System.import('./containers/DesignersTable').then((m)=> {
           cb(null, m.default)
@@ -21,7 +21,7 @@ export default {
       }
     },
     {
-      path: '/tints',
+      path: '/translations/tints',
       getComponent(nextState, cb){
         System.import('./containers/TintsTable').then((m)=> {
           cb(null, m.default)
@@ -29,7 +29,7 @@ export default {
       }
     },
     {
-      path: '/tint_cats',
+      path: '/translations/tint_cats',
       getComponent(nextState, cb){
         System.import('./containers/TintCatsTable').then((m)=> {
           cb(null, m.default)
@@ -37,7 +37,7 @@ export default {
       }
     },
     {
-      path: '/pages',
+      path: '/translations/pages',
       getComponent(nextState, cb){
         System.import('./containers/PagesTable').then((m)=> {
           cb(null, m.default)
@@ -45,7 +45,7 @@ export default {
       }
     },
     {
-      path: '/page_cats',
+      path: '/translations/page_cats',
       getComponent(nextState, cb){
         System.import('./containers/PageCatsTable').then((m)=> {
           cb(null, m.default)
@@ -53,7 +53,7 @@ export default {
       }
     },
     {
-      path: '/len_cats',
+      path: '/translations/len_cats',
       getComponent(nextState, cb){
         System.import('./containers/LenCatsTable').then((m)=> {
           cb(null, m.default)
@@ -61,7 +61,7 @@ export default {
       }
     },
     {
-      path: '/cats',
+      path: '/translations/cats',
       getComponent(nextState, cb){
         System.import('./containers/CategoriesTable').then((m)=> {
           cb(null, m.default)
@@ -69,7 +69,7 @@ export default {
       }
     },
     {
-      path: '/omnis_statuses',
+      path: '/translations/omnis_statuses',
       getComponent(nextState, cb){
         System.import('./containers/OmnisStatusesTable').then((m)=> {
           cb(null, m.default)
@@ -77,7 +77,7 @@ export default {
       }
     },
     {
-      path: '/tabs',
+      path: '/translations/tabs',
       getComponent(nextState, cb){
         System.import('./containers/TabsTable').then((m)=> {
           cb(null, m.default)
@@ -85,7 +85,7 @@ export default {
       }
     },
     {
-      path: '/user_notifications_msg',
+      path: '/translations/user_notifications_msg',
       getComponent(nextState, cb){
         System.import('./containers/UserNotificationsTable').then((m)=> {
           cb(null, m.default)
@@ -93,7 +93,7 @@ export default {
       }
     },
     {
-      path: '/category_groups',
+      path: '/translations/category_groups',
       getComponent(nextState, cb){
         System.import('./containers/CategoryGroupsTable').then((m)=> {
           cb(null, m.default)
@@ -101,7 +101,7 @@ export default {
       }
     },
     {
-      path: '/coatings',
+      path: '/translations/coatings',
       getComponent(nextState, cb){
         System.import('./containers/CoatingsTable').then((m)=> {
           cb(null, m.default)
@@ -109,7 +109,7 @@ export default {
       }
     },
     {
-      path: '/colours',
+      path: '/translations/colours',
       getComponent(nextState, cb){
         System.import('./containers/ColoursTable').then((m)=> {
           cb(null, m.default)
@@ -117,7 +117,7 @@ export default {
       }
     },
     {
-      path: '/countries',
+      path: '/translations/countries',
       getComponent(nextState, cb){
         System.import('./containers/CountriesTable').then((m)=> {
           cb(null, m.default)
@@ -125,7 +125,7 @@ export default {
       }
     },
     {
-      path: '/delivery_methods',
+      path: '/translations/delivery_methods',
       getComponent(nextState, cb){
         System.import('./containers/DeliveryMethodsTable').then((m)=> {
           cb(null, m.default)
@@ -133,7 +133,7 @@ export default {
       }
     },
     {
-      path: '/frames',
+      path: '/translations/frames',
       getComponent(nextState, cb){
         System.import('./containers/FramesTable').then((m)=> {
           cb(null, m.default)
@@ -141,7 +141,7 @@ export default {
       }
     },
     {
-      path: '/lenses',
+      path: '/translations/lenses',
       getComponent(nextState, cb){
         System.import('./containers/LensesTable').then((m)=> {
           cb(null, m.default)
@@ -149,7 +149,7 @@ export default {
       }
     },
     {
-      path: '/payment_systems',
+      path: '/translations/payment_systems',
       getComponent(nextState, cb){
         System.import('./containers/PaymentSystemsTable').then((m)=> {
           cb(null, m.default)
@@ -157,7 +157,7 @@ export default {
       }
     },
     {
-      path: '/presc_use',
+      path: '/translations/presc_use',
       getComponent(nextState, cb){
         System.import('./containers/PrescriptionUsedTable').then((m)=> {
           cb(null, m.default)
@@ -165,7 +165,7 @@ export default {
       }
     },
     {
-      path: '/presc_use_cats',
+      path: '/translations/presc_use_cats',
       getComponent(nextState, cb){
         System.import('./containers/PrescUsedCategoriesTable').then((m)=> {
           cb(null, m.default)
