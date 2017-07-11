@@ -10,11 +10,8 @@ export default class Forgot extends React.Component {
         <header id="header" className="animated fadeInDown">
 
           <div id="logo-group">
-            <span id="logo"> <img src="assets/img/logo.png" alt="SmartAdmin"/> </span>
+            <span id="logo"> <img src="assets/img/ss_logo.png" alt="SelectSpecs"/> </span>
           </div>
-
-          <span id="extr-page-header-space"> <span className="hidden-mobile hiddex-xs">Need an account?</span> <a
-            href="#/register" className="btn btn-danger">Create account</a> </span>
 
         </header>
         <div id="main" role="main" className="animated fadeInDown">
@@ -23,17 +20,12 @@ export default class Forgot extends React.Component {
 
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
-                <h1 className="txt-color-red login-header-big">SmartAdmin</h1>
+                <h1 className="txt-color-red login-header-big">SelectSpecs API administration system</h1>
                 <div className="hero">
 
                   <div className="pull-left login-desc-box-l">
-                    <h4 className="paragraph-header">It's Okay to be Smart. Experience the simplicity of SmartAdmin,
-                      everywhere you go!</h4>
-                    <div className="login-app-icons">
-                      <a href="#/dashboard" className="btn btn-danger btn-sm">Frontend Template</a>
-                      <span> </span>
-                      <a href="#/smartadmin/different-versions.html" className="btn btn-danger btn-sm">Find out more</a>
-                    </div>
+                    <h4 className="paragraph-header">Developer preview
+                      Modules is working, but unstable sometimes :)</h4>
                   </div>
 
                   <img src="assets/img/demo/iphoneview.png" className="pull-right display-image" alt=""
@@ -43,17 +35,16 @@ export default class Forgot extends React.Component {
 
                 <div className="row">
                   <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h5 className="about-heading">About SmartAdmin - Are you up to date?</h5>
+                    <h5 className="about-heading">Our contacts:</h5>
+
                     <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                      totam rem aperiam, eaque ipsa.
+                      <a href="http://selectspecs.com">http://selectspecs.com</a>
                     </p>
-                  </div>
-                  <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h5 className="about-heading">Not just your average template!</h5>
                     <p>
-                      Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-                      eligendi voluptatem accusantium!
+                      © SelectSpecs.com 2016
+                    </p>
+                    <p>
+                      UK Company No: 6435182.
                     </p>
                   </div>
                 </div>

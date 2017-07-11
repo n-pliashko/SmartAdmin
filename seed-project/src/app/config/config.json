@@ -1,3 +1,5 @@
 {
-  "imageLoadUrl": "http://ssyii/web/site/images"
+  "imageLoadUrl": "http://ssyii/web/site/images",
+  "urlApiHost": "http://localhost:3000/api/v.2/",
+  "urlHost": "http://ssv4/"
 }

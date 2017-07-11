@@ -3,6 +3,9 @@
  */
 
 import React from 'react'
+import {connect} from 'react-redux'
+import { hashHistory } from 'react-router'
+import { logoutUser } from '../user/UserActions'
 
 import FullScreen from './FullScreen'
 import ToggleMenu from './ToggleMenu'
@@ -14,7 +17,15 @@ import LanguageSelector from '../i18n/LanguageSelector'
 
 import RecentProjects from './RecentProjects'
 
-export default class Header extends React.Component {
+class Header extends React.Component {
+
+  onLogout(e) {
+    e.preventDefault();
+    let dispatch = this.props.dispatch;
+    dispatch(logoutUser());
+    hashHistory.push('/');
+  }
+
   render() {
     return <header id="header">
       <div id="logo-group">
@@ -66,8 +77,9 @@ export default class Header extends React.Component {
               </li>
               <li className="divider"/>
               <li>
-                <a href="#/login" className="padding-10 padding-top-5 padding-bottom-5"
-                   data-action="userLogout"><i
+                <a href="#" className="padding-10 padding-top-5 padding-bottom-5"
+                   data-action="userLogout"
+                   onClick={this.onLogout.bind(this)}><i
                   className="fa fa-sign-out fa-lg"/> <strong><u>L</u>ogout</strong></a>
               </li>
             </ul>
@@ -76,7 +88,8 @@ export default class Header extends React.Component {
 
         {/* logout button */}
         <div id="logout" className="btn-header transparent pull-right">
-                    <span> <a href="#/login" title="Sign Out"
+                    <span> <a href="#" title="Sign Out"
+                              onClick={this.onLogout.bind(this)}
                               data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i
                       className="fa fa-sign-out"/></a> </span>
         </div>
@@ -134,3 +147,5 @@ export default class Header extends React.Component {
     </header>
   }
 }
+
+export default connect((state) => state)(Header)

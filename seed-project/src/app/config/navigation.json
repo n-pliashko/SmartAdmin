@@ -6,7 +6,7 @@
         {
           "title": "Item Upload",
           "icon": "fa fa-lg fa-fw fa-upload",
-          "route": "/items/item_upload"
+          "route": "/items/upload"
         },
         {
           "title": "Images",

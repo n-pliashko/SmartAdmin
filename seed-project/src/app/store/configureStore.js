@@ -19,6 +19,10 @@ import outlookReducer from '../routes/outlook/outlookReducer'
 import {voiceReducer, VoiceMiddleware} from '../components/voice-control'
 import {voiceControlOn} from "../components/voice-control/VoiceActions";
 
+const defaultState = {
+  user: {}
+}
+
 export const rootReducer = combineReducers(
   {
     routing: routerReducer,
@@ -33,6 +37,7 @@ export const rootReducer = combineReducers(
 );
 
 const store =  createStore(rootReducer,
+  defaultState,
   applyMiddleware(
     thunk,
     handleBodyClasses,

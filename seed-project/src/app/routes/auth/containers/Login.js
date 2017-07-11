@@ -1,19 +1,66 @@
 import React from 'react'
+import {connect} from 'react-redux'
 
 import UiValidate from '../../../components/forms/validation/UiValidate'
+import showDialog from '../../../components/ui/uiDialog'
 
-export default class Login extends React.Component {
+import config from '../../../config/config.json'
+import { authUser } from '../../../components/user/UserActions'
+import { hashHistory } from 'react-router'
+
+class Login extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+      password: ''
+    }
+
+    this.onLogin = this.onLogin.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  onLogin(e) {
+    e.preventDefault();
+    let dispatch = this.props.dispatch;
+    let self = this;
+    $.post(config.urlApiHost + 'auth', {email: self.state.email, password: self.state.password})
+      .then((data) => {
+        if (!data.error) {
+          dispatch(authUser(data));
+          hashHistory.push('translations/gettexts');
+        } else {
+          showDialog({
+            header: 'Error Authorization',
+            icon: 'fa fa-fw fa-warning',
+            classes: {
+              "ui-dialog-title": "text-align-center ui-dialog-title txt-color-red"
+            },
+            content: <div><p>{data.error.reason}</p></div>
+          });
+        }
+      })
+  }
+
+  handleInputChange(e) {
+    const target = e.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value
+    });
+  }
+
   render() {
+    const onSubmit = this.onLogin;
     return (
       <div id="extr-page">
         <header id="header" className="animated fadeInDown">
 
           <div id="logo-group">
-            <span id="logo"> <img src="assets/img/logo.png" alt="SmartAdmin"/> </span>
+            <span id="logo"> <img src="assets/img/ss_logo.png" alt="SelectSpecs"/> </span>
           </div>
-
-          <span id="extr-page-header-space"> <span className="hidden-mobile hiddex-xs">Need an account?</span>&nbsp;<a
-            href="#/register" className="btn btn-danger">Create account</a> </span>
 
         </header>
         <div id="main" role="main" className="animated fadeInDown">
@@ -21,45 +68,40 @@ export default class Login extends React.Component {
           <div id="content" className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
-                <h1 className="txt-color-red login-header-big">SmartAdmin</h1>
+                <h1 className="txt-color-red login-header-big">SelectSpecs API administration system</h1>
 
                 <div className="hero">
                   <div className="pull-left login-desc-box-l">
-                    <h4 className="paragraph-header">It's Okay to be Smart. Experience the simplicity of SmartAdmin,
-                      everywhere you go!</h4>
-
-                    <div className="login-app-icons">
-                      <a href="#/dashboard" className="btn btn-danger btn-sm">Frontend Template</a>
-                      <span> </span>
-                      <a href="#/smartadmin/different-versions.html" className="btn btn-danger btn-sm">Find out more</a>
-                    </div>
+                    <h4 className="paragraph-header">Developer preview
+                      Modules is working, but unstable sometimes :)</h4>
                   </div>
                   <img src="assets/img/demo/iphoneview.png" className="pull-right display-image" alt=""
                        style={{width: '210px'}}/>
                 </div>
                 <div className="row">
                   <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h5 className="about-heading">About SmartAdmin - Are you up to date?</h5>
+                    <h5 className="about-heading">Our contacts:</h5>
 
                     <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                      laudantium, totam rem aperiam, eaque ipsa.
+                      <a href="http://selectspecs.com">http://selectspecs.com</a>
                     </p>
-                  </div>
-                  <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h5 className="about-heading">Not just your average template!</h5>
-
                     <p>
-                      Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                      nobis est eligendi voluptatem accusantium!
+                      © SelectSpecs.com 2016
+                    </p>
+                    <p>
+                      UK Company No: 6435182.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="col-xs-12 col-sm-12 col-md-5 col-lg-4">
                 <div className="well no-padding">
-                  <UiValidate>
-                    <form action="#/dashboard" id="login-form" className="smart-form client-form">
+                  <UiValidate options={{
+                    submitHandler: function(form, event) {
+                      onSubmit(event);
+                    }
+                  }}>
+                    <form action="#/translations/gettext" id="login-form" className="smart-form client-form"  method="POST">
                       <header>
                         Sign In
                       </header>
@@ -69,7 +111,8 @@ export default class Login extends React.Component {
                           <label className="input"> <i className="icon-append fa fa-user"/>
                             <input type="email" name="email" data-smart-validate-input="" data-required="" data-email=""
                                    data-message-required="Please enter your email address"
-                                   data-message-email="Please enter a VALID email address"/>
+                                   data-message-email="Please enter a VALID email address"
+                                   value={this.state.email} onChange={this.handleInputChange}/>
                             <b className="tooltip tooltip-top-right"><i className="fa fa-user txt-color-teal"/>
                               Please enter email address/username</b></label>
                         </section>
@@ -78,18 +121,14 @@ export default class Login extends React.Component {
                           <label className="input"> <i className="icon-append fa fa-lock"/>
                             <input type="password" name="password" data-smart-validate-input="" data-required=""
                                    data-minlength="3" data-maxnlength="20"
-                                   data-message="Please enter your email password"/>
+                                   data-message="Please enter your email password"
+                                   value={this.state.password} onChange={this.handleInputChange}/>
                             <b className="tooltip tooltip-top-right"><i className="fa fa-lock txt-color-teal"/> Enter
                               your password</b> </label>
 
                           <div className="note">
                             <a href="#/forgot">Forgot password?</a>
                           </div>
-                        </section>
-                        <section>
-                          <label className="checkbox">
-                            <input type="checkbox" name="remember" defaultChecked={true}/>
-                            <i/>Stay signed in</label>
                         </section>
                       </fieldset>
                       <footer>
@@ -116,7 +155,11 @@ export default class Login extends React.Component {
             </div>
           </div>
         </div>
+        <div id="dialogErrorResult">
+        </div>
       </div>
     )
   }
 }
+
+export default connect((state) => state)(Login)
