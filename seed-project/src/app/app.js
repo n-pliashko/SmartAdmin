@@ -12,7 +12,7 @@ const routes = {
   path: '/',
   indexRoute: {
     onEnter: (nextState, replace) => {
-      replace('/login');
+      replace('/translations/gettexts');
     }
   },
   childRoutes: [
@@ -21,10 +21,10 @@ const routes = {
       component: require('../app/components/user/containers/EnsureLoggedIn').default,
       childRoutes: [
         require('./routes/items').default,
-        require('./routes/translations').default,
-        require('./routes/not-found').default
+        require('./routes/translations').default
       ]
-    }
+    },
+    require('./routes/not-found').default
   ]
 };
 

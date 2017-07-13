@@ -6,7 +6,7 @@ class EnsureLoggedIn extends React.Component {
   constructor(props) {
     super(props);
     const { user } = this.props
-    const isLoggingOut = _.isEmpty(user);
+    const isLoggingOut = localStorage.getItem('token') === null && _.isEmpty(user);
     this.state = {
       isLoggingOut: isLoggingOut
     }

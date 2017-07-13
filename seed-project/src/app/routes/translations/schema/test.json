@@ -5,7 +5,7 @@
       "type": "hidden",
       "class": "",
       "readonly": false,
-      "visible": true,
+      "visible": false,
       "title": "ID",
       "icon": "",
       "priority": 1

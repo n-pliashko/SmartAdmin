@@ -1,5 +1,36 @@
 {
   "imageLoadUrl": "http://ssyii/web/site/images",
   "urlApiHost": "http://localhost:3000/api/v.2/",
-  "urlHost": "http://ssv4/"
+  "urlHost": "http://ssv4/",
+
+  "gettext": {
+    "ajaxTable": {
+      "url": "http://localhost:3000/api/v.2/gettext/datatable",
+      "method": "POST",
+      "data": [
+        "datatype"
+      ],
+      "token": true
+    },
+    "getUrl": {
+      "url": "http://localhost:3000/api/v.2/gettext/id/:pk",
+      "method": "GET",
+      "data": ["pk"],
+      "token": true
+    },
+    "updateUrl": {
+      "url": "http://localhost:3000/api/v.2/gettext/id/:pk",
+      "method": "POST",
+      "data": [
+        "datatype",
+        "pk"
+      ],
+      "token": true
+    },
+    "deleteUrl": {
+      "url": "http://localhost:3000/api/v.2/gettext/id/:pk",
+      "method": "DELETE",
+      "token": true
+    }
+  }
 }

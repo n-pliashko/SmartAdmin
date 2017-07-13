@@ -23,7 +23,7 @@ class Header extends React.Component {
     e.preventDefault();
     let dispatch = this.props.dispatch;
     dispatch(logoutUser());
-    hashHistory.push('/');
+    hashHistory.push('/login');
   }
 
   render() {

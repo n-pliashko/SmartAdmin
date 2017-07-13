@@ -2,10 +2,10 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 import UiValidate from '../../../components/forms/validation/UiValidate'
-import showDialog from '../../../components/ui/uiDialog'
+import { showDialogError } from '../../../components/ui/uiDialog'
 
 import config from '../../../config/config.json'
-import { authUser } from '../../../components/user/UserActions'
+import { requestUserInfo, showErrorAuth } from '../../../components/user/UserActions'
 import { hashHistory } from 'react-router'
 
 class Login extends React.Component {
@@ -25,22 +25,20 @@ class Login extends React.Component {
     e.preventDefault();
     let dispatch = this.props.dispatch;
     let self = this;
-    $.post(config.urlApiHost + 'auth', {email: self.state.email, password: self.state.password})
+
+    $.post(config.urlApiHost + 'manager/auth', {email: self.state.email, password: self.state.password})
       .then((data) => {
         if (!data.error) {
-          dispatch(authUser(data));
+          localStorage.setItem('token', data.token);
+          dispatch(requestUserInfo());
           hashHistory.push('translations/gettexts');
         } else {
-          showDialog({
-            header: 'Error Authorization',
-            icon: 'fa fa-fw fa-warning',
-            classes: {
-              "ui-dialog-title": "text-align-center ui-dialog-title txt-color-red"
-            },
-            content: <div><p>{data.error.reason}</p></div>
-          });
+          showDialogError('Error Authorization', data.error.reason);
         }
-      })
+      }).fail(function (error) {
+      error = JSON.parse(error.responseText).error;
+      dispatch(showErrorAuth(error));
+    })
   }
 
   handleInputChange(e) {

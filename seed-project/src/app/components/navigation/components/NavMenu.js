@@ -3,6 +3,7 @@
  */
 
 import React, {PropTypes} from 'react'
+import {connect} from 'react-redux'
 
 
 import {findDOMNode} from 'react-dom'
@@ -32,7 +33,7 @@ function addId(item) {
 const navItems = require('../../../config/navigation.json').items.map(addId);
 
 
-export default class NavMenu extends React.Component {
+class NavMenu extends React.Component {
 
   componentWillMount() {
     store.dispatch(navigationInit(navItems))
@@ -124,9 +125,10 @@ export default class NavMenu extends React.Component {
   }
 
   render() {
+    const {navigation} = store.getState()
     return (
       navItems ?
-        <NavMenuList items={navItems}/>
+        <NavMenuList items={navigation.items}/>
         : this.props.children
     )
   }
@@ -138,3 +140,6 @@ NavMenu.propTypes = {
   closedSign: PropTypes.string,
   openedSign: PropTypes.string
 };
+
+
+export default connect((state) => state)(NavMenu)

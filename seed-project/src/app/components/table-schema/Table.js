@@ -11,6 +11,13 @@ export default class Table extends React.Component {
     this.componentDidMount = this.componentDidMount.bind(this);
   }
 
+  convertDataParams(schema, array) {
+    return array.reduce((obj, one) => {
+      obj[one] = schema[one]
+      return obj
+    }, {})
+  }
+
   componentDidMount() {
     System.import('script-loader!../../../assets/js/DataTables/datatables').then(() => {
 
@@ -34,6 +41,27 @@ export default class Table extends React.Component {
         columns.push(cell);
       });
 
+      console.log(localStorage.getItem('token'));
+
+      let ajax_options = {
+        url: schema.ajaxTable.url,
+        type: schema.ajaxTable.method,
+      }
+
+      if (schema.ajaxTable.token) {
+        ajax_options.headers = {
+          "Authorization": localStorage.getItem('token')
+        }
+      }
+
+      if (schema.ajaxTable.data) {
+        ajax_options.data = this.convertDataParams(schema, schema.ajaxTable.data);
+        ajax_options.data.lang = 'en';
+      }
+
+      if (schema.getUrl.data) {
+        schema.getUrl.data = this.convertDataParams(schema, schema.getUrl.data)
+      }
 
       let options = {
         dom: "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs text-right'Bl>r>" +
@@ -45,7 +73,8 @@ export default class Table extends React.Component {
         },
         autoWidth: false,
         stateSave: true,
-        ajax: schema.getDataAjax,
+        serverSide: true,
+        ajax: ajax_options,
         columns: columns,
         buttons: [
           {
@@ -80,18 +109,20 @@ export default class Table extends React.Component {
         ]
       };
 
+      let table_identifier = '#' + this.props.identifier;
       let button_columns = [{
         orderable: false,
         data: null,
         targets: -1,
         createdCell: function (cell, cellData) {
-          $(cell).parent('tr').attr('data-row-id', cellData.id);
+          let id = cellData[schema.pk];
+          $(cell).parent('tr').attr('data-row-id', id);
           let button = <div className="btn-group">
-            <DialogModalButton header="<h4>Editing</h4>" modal={true} edit={true} attributes={attributes} id={cellData.id}
-                               url={schema.editUrl} saveAction={schema.saveAction} data_url="id"/>
+            <DialogModalButton header="<h4>Editing</h4>" modal={true} edit={true} attributes={attributes} pk={id}
+                               ajax={schema.getUrl} saveAction={schema.updateUrl} tableIdentifier={table_identifier}/>
             <DialogModalButton header="<h4><i class='fa fa-warning'/> Are you sure do you want to remove?</h4>"
-                               modal={true} delete={true} id={cellData.id} table={this}
-                               url={schema.deleteAction} data_url="id"/>
+                               modal={true} delete={true} pk={id} tableIdentifier={table_identifier}
+                               ajax={schema.deleteUrl}/>
           </div>;
           ReactDOM.render(button, cell);
         },
@@ -102,7 +133,7 @@ export default class Table extends React.Component {
       if (this.props.options) {
         options = $.extend({}, this.props.options, options);
       }
-      $('#' + this.props.identifier).DataTable(options);
+      $(table_identifier).DataTable(options);
     });
   }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 
 import UiDatepicker from '../forms/inputs/UiDatepicker';
 import SmartCKEditor from '../../components/forms/editors/SmartCKEditor'
@@ -6,14 +7,30 @@ import SmartCKEditor from '../../components/forms/editors/SmartCKEditor'
 import 'script-loader!eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker'
 require('eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css');
 
-export default class DialogModalContent extends React.Component{
+export default class DialogModalContent extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      attributes: this.props.attributes,
+      row: this.props.row
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleEditorChange = this.handleEditorChange.bind(this);
+    this.getValueByName = this.getValueByName.bind(this);
+  }
 
   componentDidMount() {
     $(this.refs.datetime).datetimepicker({
       locale: 'en',
       showTodayButton: true,
-      showClear: true
+      showClear: true,
+      ignoreReadonly: true
     });
+    this.state = {
+      attributes: this.props.attributes,
+      row: this.props.row
+    };
   }
 
   componentWillUnmount() {
@@ -23,49 +40,60 @@ export default class DialogModalContent extends React.Component{
   _submitDialog = (e)=> {
     e.preventDefault();
     let props = this.props;
-    $.ajax({
-      url: props.url,
-      dataType: 'json',
-      method: 'POST',
-      data: this.state.row,
+    let ajax_options = {
+      url: props.ajax.url.replace(':pk', props.pk),
+      dataType: 'JSON',
+      data: JSON.stringify(this.state.row),
       cache: false,
+    }
+
+    if (props.ajax.token) {
+      ajax_options.headers = {
+        "Authorization": localStorage.getItem('token'),
+        "Content-Type": "application/json"
+      };
+    }
+
+    if ( props.ajax.method ) {
+      ajax_options.method = props.ajax.method;
+    }
+
+    $.ajax(_.extend(ajax_options,{
       success: function (data) {
         console.log(data);
-        this.closeDialog(e);
+        this.props.closeDialog(e);
+        $(this.props.tableIdentifier).dataTable().api().ajax.reload(null, false);
       }.bind(this),
       error: function (xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
+        console.error(this.props.ajax.url, status, err.toString());
       }.bind(this)
-    });
+    }));
   }
 
   _cancelDialog = (e)=> {
     this.props.closeDialog(e);
   }
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      attributes : this.props.attributes,
-      row : this.props.row
-    };
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleEditorChange = this.handleEditorChange.bind(this);
-  }
-
   handleInputChange(event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
-    this.state.row[name] = value;
+    _.set(this.state.row, name, value)
     this.setState({});
   }
 
   handleEditorChange(event) {
     const name = event.name;
     const value = event.getData();
-    this.state.row[name] = value;
+    _.set(this.state.row, name, value)
     this.setState({});
+  }
+
+  getValueByName(name) {
+    return name.split('.')
+      .reduce(function (object, property) {
+        return object[property];
+      }, this.state.row);
   }
 
   render () {
@@ -85,18 +113,29 @@ export default class DialogModalContent extends React.Component{
         readonly = true;
       }
 
-      let input = <input className={className} type={one.type} name={one.name} value={data.row[one.name]} onChange={this.handleInputChange} readOnly={readonly}/>;
+      let input = <input className={className} type={one.type} name={one.name} value={this.getValueByName(one.name)} onChange={this.handleInputChange} readOnly={readonly}/>;
 
       if (one.type == 'phone') {
         input = <label className="input-icon-right"><i  className="icon-append fa fa-phone"/><input type="text"
-                                                                                                    name={one.name} value={data.row[one.name]} onChange={this.handleInputChange}
+                                                                                                    name={one.name} value={this.getValueByName(one.name)} onChange={this.handleInputChange}
                                                                                                     className={className} readOnly={readonly}/>
         </label>;
       }
 
+      if (one.type == 'link') {
+        let links = this.getValueByName(one.name);
+        let input = '';
+        if (!_.isArray(links)) {
+          links = [links];
+        }
+        links.map(link => {
+          input += '<a href="'+ link + '">' + link + '</a>';
+        })
+      }
+
       if (one.type == 'date') {
         input = <label className="input-icon-right"><i  className="icon-append fa fa-calendar"/><UiDatepicker
-                    name={one.name} value={data.row[one.name]} onChange={this.handleInputChange}
+                    name={one.name} value={this.getValueByName(one.name)} onChange={this.handleInputChange}
                     className={className} changeMonth={true} changeYear={true} readOnly={readonly}
                     data-date-format="dd/mm/yy"/>
         </label>;
@@ -104,13 +143,13 @@ export default class DialogModalContent extends React.Component{
 
       if (one.type == 'datetime') {
         input = <label className="input-icon-right"><i  className="icon-append fa fa-calendar"/><input
-          type="text" name={one.name} defaultValue={data.row[one.name]} onChange={this.handleInputChange} data-date-format="DD/MM/YYYY HH:mm:ss" ref="datetime"
+          type="text" name={one.name} defaultValue={this.getValueByName(one.name)} onChange={this.handleInputChange} data-date-format="DD/MM/YYYY HH:mm:ss" ref="datetime"
           className={className}/>
         </label>;
       }
 
       if (one.type == 'textarea') {
-        input = <textarea className={className} name={one.name} onChange={this.handleInputChange} readOnly={readonly}>{data.row[one.name]} </textarea>;
+        input = <textarea className={className} name={one.name} onChange={this.handleInputChange} readOnly={readonly}>{this.getValueByName(one.name)} </textarea>;
       }
 
       if (one.type == 'html') {
@@ -118,7 +157,7 @@ export default class DialogModalContent extends React.Component{
           height: '180px',
           startupFocus: true,
           language: 'en'
-        }} name={one.name} onChange={this.handleEditorChange} defaultValue={data.row[one.name]} readOnly={readonly}/>;
+        }} name={one.name} onChange={this.handleEditorChange} defaultValue={this.getValueByName(one.name)} readOnly={readonly}/>
       }
 
       return (
@@ -131,8 +170,8 @@ export default class DialogModalContent extends React.Component{
       );
     });
     return (
-      <div id={data.row.id} className={this.props.className}>
-        <form id={data.id} className="form-horizontal" method="POST">
+      <div className={this.props.className}>
+        <form className="form-horizontal" method="POST">
           {inputs}
           <div className="col-md-12" style={{textAlign: 'right'}}>
             <button className="btn btn-default" type="reset" onClick={this._cancelDialog}>

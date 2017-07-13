@@ -20,7 +20,6 @@ export default class DialogModalButton extends React.Component {
     this.showDialog = this.showDialog.bind(this);
   }
 
-
   showDialog (e) {
     e.preventDefault();
 
@@ -39,50 +38,66 @@ export default class DialogModalButton extends React.Component {
       },
       modal: !!this.props.modal,
       close: function (e) {
-        ReactDOM.unmountComponentAtNode(this);
         $(this).remove();
       }
     });
 
     let closeDialog = function (e) {
-      e.preventDefault();
+      e.persist();
       $dialog.dialog('close');
     };
 
+    let ajax_options = {
+      url: props.ajax.url,
+      dataType: 'JSON',
+      cache: false,
+    }
+
+    if (props.ajax.token) {
+      ajax_options.headers = {
+        "Authorization": localStorage.getItem('token'),
+        "Content-Type": "application/json"
+      }
+    }
+
+    if (props.ajax.method) {
+      ajax_options.method = props.ajax.method;
+    }
+
+    if (props.ajax.data) {
+      ajax_options.data = props.ajax.data;
+    }
+
+    if (props.pk) {
+      ajax_options.url = ajax_options.url.replace(':pk', props.pk);
+    }
+
     if (!!props.edit) {
-      $.ajax({
-        url: props.url,
-        dataType: 'json',
-        cache: false,
-        data: {[props.data_url] : encodeURIComponent(props[props.data_url])},
+      $.ajax(_.extend(ajax_options, {
         success: function (data) {
-          data = data.aaData;
           let content = React.createElement(DialogModalContent, {
             closeDialog: closeDialog,
+            tableIdentifier: props.tableIdentifier,
             attributes: this.props.attributes,
-            row: data[id - 1],
-            url: props.saveAction
+            row: data,
+            pk: props.pk,
+            ajax: props.saveAction
           });
           ReactDOM.render(content, $dialog[0])
         }.bind(this),
         error: function (xhr, status, err) {
           console.error(this.props.url, status, err.toString());
         }.bind(this)
-      });
+      }));
     }
 
     if (!!props.delete) {
-      let content = React.createElement(deleteContent, {closeDialog: closeDialog, id: id, table: props.table, url: props.url});
+      let content = React.createElement(deleteContent, {closeDialog: closeDialog, tableIdentifier: props.tableIdentifier, ajax_options: ajax_options});
       ReactDOM.render(content, $dialog[0])
     }
 
     if (!!props.info) {
-      $.ajax({
-        url: props.url,
-        dataType: 'json',
-        cache: false,
-        method: 'GET',
-        data: {[props.data_url] : encodeURIComponent(props[props.data_url])},
+      $.ajax(_.extend(ajax_options, {
         success: function (data) {
           let content = '';
           if (props.template) {
@@ -95,7 +110,7 @@ export default class DialogModalButton extends React.Component {
         error: function (xhr, status, err) {
           console.error(props.url, status, err.toString());
         }.bind(this)
-      });
+      }));
     }
   }
 
@@ -128,29 +143,18 @@ class deleteContent extends React.Component {
 
   _submitDialog = (e)=> {
     e.preventDefault();
-    let table = this.props.table;
-    if (!table.ajax) {
-      table = table.dataTable().api();
-    }
 
-    let id = this.props.id;
-    /*$.ajax({
-      url: this.props.url,
-      dataType: 'json',
-      cache: false,
+    console.log(this.props.ajax_options);
+    $.ajax(_.extend(this.props.ajax_options, {
       success: function (data) {
-        if (data.success) {
-          table.row('[data-row-id="' + id + '"]').remove().draw(false);
-        } else {
-          console.error('assets/api/tables/datatables.standard.json', 500, data.message);
-        }
+        console.log(data);
       }.bind(this),
       error: function (xhr, status, err) {
-        console.error('assets/api/tables/datatables.standard.json', status, err.toString());
+        console.error(this.props.ajax_options.url, status, err.toString());
       }.bind(this)
-    })*/
-    table.row('[data-row-id="' + id + '"]').remove().draw(false);
+    }));
     this.props.closeDialog(e);
+    $(this.props.tableIdentifier).dataTable().api().ajax.reload(null, false);
   }
 
   constructor(props) {

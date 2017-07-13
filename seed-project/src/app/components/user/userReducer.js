@@ -3,14 +3,16 @@
  */
 
 
-import {USER_INFO} from './UserActions'
+import { USER_INFO, USER_ACCESS } from './UserActions'
 
 export default function userReducer (state = {
 
 }, action ){
-  switch (action.type){
+  switch (action.type) {
     case USER_INFO:
       return action.data
+    case USER_ACCESS:
+      return {...state, accessInfo: action.access}
     default:
       return state
   }

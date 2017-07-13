@@ -1,5 +1,6 @@
 export default {
   path: '/',
+  name:'items',
   component: require('../../components/common/Layout').default,
   childRoutes: [
     {

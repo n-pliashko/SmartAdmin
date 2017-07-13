@@ -11,7 +11,7 @@ $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
   }
 }));
 
-const showDialog = (options) => {
+export function showDialog(options) {
   let dialogCommonOptions = {
     title: '<div class="widget-header"><span class="' +  (options.icon ? options.icon : '') + '"></span><span>' + options.header + '</span></div>',
     width: 300,
@@ -30,6 +30,16 @@ const showDialog = (options) => {
 
   let $dialog = $('<div></div>').dialog(_.extend(dialogCommonOptions, options));
   ReactDOM.render(options.content, $dialog[0])
-}
+};
 
-export default showDialog;
+export function showDialogError(header, message) {
+  showDialog({
+    header: header,
+    icon: 'fa fa-fw fa-warning',
+    classes: {
+      "ui-dialog-title": "text-align-center ui-dialog-title txt-color-red"
+    },
+    content: <div><p>{message}</p></div>
+  })
+};
+

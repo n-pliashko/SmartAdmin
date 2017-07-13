@@ -12,7 +12,6 @@ require('../../../../../assets/js/DataTables/datatables.min.css');
 export default class ItemUpload extends React.Component {
 
   componentDidMount() {
-    console.log(this.props.user);
     System.import('script-loader!../../../../../assets/js/DataTables/datatables').then(()=> {
 
       $.extend($.fn.dataTableExt.oStdClasses, {

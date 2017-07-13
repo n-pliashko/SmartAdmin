@@ -1,32 +1,32 @@
 {
   "schema": [
     {
-      "name": "id",
+      "name": "_id",
       "type": "hidden",
       "class": "",
       "readonly": false,
-      "visible": true,
+      "visible": false,
       "title": "ID",
       "icon": "",
       "priority": 1
     },
     {
-      "name": "created",
+      "name": "__service.created",
       "type": "date",
       "class": "",
       "readonly": true,
       "visible": true,
-      "title": "Created date",
+      "title": "Date Created",
       "icon": "fa fa-fw fa-calendar",
       "priority": 2
     },
     {
-      "name": "updated",
+      "name": "__service.updated",
       "type": "date",
       "class": "",
       "readonly": true,
       "visible": true,
-      "title": "",
+      "title": "Date Updated",
       "icon": "fa fa-fw fa-calendar",
       "priority": 3
     },
@@ -42,7 +42,7 @@
     },
     {
       "name": "urls",
-      "type": "text",
+      "type": "link",
       "class": "",
       "readonly": true,
       "visible": true,
@@ -51,18 +51,16 @@
       "priority": 6
     },
     {
-      "name": "value",
+      "name": "value.value",
       "type": "html",
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Value",
       "icon": "",
       "priority": 5
     }
   ],
-  "getDataAjax" : "",
-  "saveAction" : "",
-  "editUrl" : "",
-  "deleteAction" : ""
+  "datatype": "gettext_translation",
+  "pk": "_id"
 }

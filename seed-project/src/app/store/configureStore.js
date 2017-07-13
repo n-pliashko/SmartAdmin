@@ -14,6 +14,7 @@ import {userReducer, requestUserInfo} from '../components/user'
 import {chatReducer, chatInit} from '../components/chat'
 import {eventsReducer} from '../components/calendar'
 import outlookReducer from '../routes/outlook/outlookReducer'
+import redirectReducer from '../components/redirect/redirectReducer'
 
 
 import {voiceReducer, VoiceMiddleware} from '../components/voice-control'
@@ -28,6 +29,7 @@ export const rootReducer = combineReducers(
     routing: routerReducer,
     layout: layoutReducer,
     navigation: navigationReducer,
+    redirect: redirectReducer,
     outlook: outlookReducer,
     user: userReducer,
     chat: chatReducer,
@@ -37,7 +39,6 @@ export const rootReducer = combineReducers(
 );
 
 const store =  createStore(rootReducer,
-  defaultState,
   applyMiddleware(
     thunk,
     handleBodyClasses,

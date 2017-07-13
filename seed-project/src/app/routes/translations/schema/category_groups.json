@@ -1,7 +1,7 @@
 {
   "schema": [
     {
-      "name": "id",
+      "name": "_id",
       "type": "hidden",
       "class": "",
       "readonly": false,
@@ -50,6 +50,8 @@
       "priority": 10
     }
   ],
+  "datatype": "category_groups",
+  "primary_key": "_id",
   "getDataAjax": "",
   "saveAction": "",
   "editUrl": "",
