@@ -19,6 +19,7 @@ export default class DialogModalContent extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleEditorChange = this.handleEditorChange.bind(this);
     this.getValueByName = this.getValueByName.bind(this);
+    this.handleLinkChange = this.handleLinkChange.bind(this);
   }
 
   componentDidMount() {
@@ -28,6 +29,11 @@ export default class DialogModalContent extends React.Component {
       showClear: true,
       ignoreReadonly: true
     });
+    this.state = {
+      attributes: this.props.attributes,
+      row: this.props.row,
+      new: this.props.new
+    };
   }
 
   componentWillUnmount() {
@@ -89,11 +95,14 @@ export default class DialogModalContent extends React.Component {
   handleLinkChange(event) {
     const name = event.name;
     const value = event.getData();
-
-    console.log(event);
-    /*
-    _.set(this.state.row, name, value.split(';'))
-    this.setState({});*/
+    let doc = $(value);
+    let links = $('a', doc);
+    let urls = [];
+    for (var i=0; i< links.length; i++) {
+      urls.push(links[i].getAttribute("href"));
+    }
+    _.set(this.state.row, name, urls)
+    this.setState({});
   }
 
   getValueByName(name) {
@@ -146,18 +155,11 @@ export default class DialogModalContent extends React.Component {
           })
         }
 
-        if (!!data.new) {
-          input = <SmartCKEditor className={className} container={one.name} options={{
-            height: '80px',
-            toolbar: [{ name: 'links', items : [ 'Link','Unlink','Anchor' ] }],
-            allowedContent: {
-              a: {
-                attributes: '!href'
-              }
-            },
-            language: 'en'
-          }} name={one.name} onChange={this.handleLinkChange} defaultValue={input}/>
-        }
+        input = <SmartCKEditor className={className} container={one.name} options={{
+          height: '80px',
+          toolbar: [{name: 'links', items: ['Link', 'Unlink', 'Anchor']}],
+          language: 'en'
+        }} name={one.name} onChange={this.handleLinkChange} defaultValue={input}/>
       }
 
       if (one.type == 'date') {
