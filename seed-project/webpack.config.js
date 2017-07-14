@@ -88,7 +88,6 @@ module.exports = (env) => {
       ]
     },
     devServer: {
-
       // historyApiFallback: true,
       contentBase: path.join(__dirname, "dist"),
       port: 2400,
@@ -96,7 +95,6 @@ module.exports = (env) => {
       compress:true,
       publicPath: '/',
       stats: "minimal"
-
     },
     stats: "minimal",
     performance: {

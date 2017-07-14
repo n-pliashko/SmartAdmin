@@ -6,6 +6,7 @@
       "class": "",
       "readonly": false,
       "visible": false,
+      "autoCreate": true,
       "title": "ID",
       "icon": "",
       "priority": 1
@@ -16,6 +17,7 @@
       "class": "",
       "readonly": true,
       "visible": true,
+      "autoCreate": true,
       "title": "Date Created",
       "icon": "fa fa-fw fa-calendar",
       "priority": 2
@@ -26,6 +28,7 @@
       "class": "",
       "readonly": true,
       "visible": true,
+      "autoCreate": true,
       "title": "Date Updated",
       "icon": "fa fa-fw fa-calendar",
       "priority": 3

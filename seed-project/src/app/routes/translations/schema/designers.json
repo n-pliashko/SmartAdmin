@@ -1,7 +1,7 @@
 {
   "schema": [
     {
-      "name": "id",
+      "name": "_id",
       "type": "hidden",
       "class": "",
       "readonly": false,
@@ -11,7 +11,7 @@
       "priority": 1
     },
     {
-      "name": "created",
+      "name": "__service.created",
       "type": "datetime",
       "class": "",
       "readonly": false,
@@ -21,7 +21,7 @@
       "priority": 2
     },
     {
-      "name": "updated",
+      "name": "__service.updated",
       "type": "datetime",
       "class": "",
       "readonly": false,
@@ -31,7 +31,7 @@
       "priority": 3
     },
     {
-      "name": "spec_content",
+      "name": "value.spec_content",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -41,7 +41,7 @@
       "priority": 4
     },
     {
-      "name": "header",
+      "name": "value.header",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -51,7 +51,7 @@
       "priority": 5
     },
     {
-      "name": "header_pg",
+      "name": "value.header_pg",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -61,7 +61,7 @@
       "priority": 6
     },
     {
-      "name": "header_acc",
+      "name": "value.header_acc",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -71,7 +71,7 @@
       "priority": 7
     },
     {
-      "name": "header_gog",
+      "name": "value.header_gog",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -81,7 +81,7 @@
       "priority": 8
     },
     {
-      "name": "header_cl",
+      "name": "value.header_cl",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -91,7 +91,7 @@
       "priority": 9
     },
     {
-      "name": "description",
+      "name": "value.description",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -101,7 +101,7 @@
       "priority": 10
     },
     {
-      "name": "description_pg",
+      "name": "value.description_pg",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -111,7 +111,7 @@
       "priority": 11
     },
     {
-      "name": "description_acc",
+      "name": "value.description_acc",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -121,7 +121,7 @@
       "priority": 12
     },
     {
-      "name": "description_gog",
+      "name": "value.description_gog",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -131,7 +131,7 @@
       "priority": 11
     },
     {
-      "name": "description_cl",
+      "name": "value.description_cl",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -141,7 +141,7 @@
       "priority": 11
     },
     {
-      "name": "meta_title",
+      "name": "value.meta_title",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -151,7 +151,7 @@
       "priority": 11
     },
     {
-      "name": "meta_description",
+      "name": "value.meta_description",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -162,7 +162,7 @@
     },
     {
       "name": "urls",
-      "type": "text",
+      "type": "link",
       "class": "",
       "readonly": false,
       "visible": true,
@@ -171,8 +171,6 @@
       "priority": 11
     }
   ],
-  "getDataAjax": "",
-  "saveAction": "",
-  "editUrl": "",
-  "deleteAction": ""
+  "datatype": "designers",
+  "pk": "_id"
 }

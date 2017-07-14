@@ -15,17 +15,23 @@
     "getUrl": {
       "url": "http://localhost:3000/api/v.2/gettext/id/:pk",
       "method": "GET",
-      "data": ["pk"],
       "token": true
     },
     "updateUrl": {
       "url": "http://localhost:3000/api/v.2/gettext/id/:pk",
       "method": "POST",
       "data": [
-        "datatype",
-        "pk"
+        "datatype"
       ],
       "token": true
+    },
+    "createUrl": {
+      "url": "http://localhost:3000/api/v.2/gettext",
+      "method": "PUT",
+      "token": true,
+      "data": [
+        "datatype"
+      ]
     },
     "deleteUrl": {
       "url": "http://localhost:3000/api/v.2/gettext/id/:pk",

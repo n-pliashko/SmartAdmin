@@ -1,7 +1,7 @@
 {
   "schema": [
     {
-      "name": "id",
+      "name": "_id",
       "type": "hidden",
       "class": "",
       "readonly": false,
@@ -11,7 +11,7 @@
       "priority": 1
     },
     {
-      "name": "created",
+      "name": "__service.created",
       "type": "date",
       "class": "",
       "readonly": true,
@@ -20,7 +20,7 @@
       "icon": "fa fa-fw fa-calendar"
     },
     {
-      "name": "updated",
+      "name": "__service.updated",
       "type": "date",
       "class": "",
       "readonly": true,
@@ -30,7 +30,7 @@
       "priority": 2
     },
     {
-      "name": "name",
+      "name": "value.name",
       "type": "html",
       "class": "",
       "readonly": false,
@@ -50,8 +50,6 @@
       "priority": 10
     }
   ],
-  "getDataAjax": "",
-  "saveAction": "",
-  "editUrl": "",
-  "deleteAction": ""
+  "datatype": "len_cats",
+  "pk": "_id"
 }

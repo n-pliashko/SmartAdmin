@@ -31,7 +31,10 @@ export default class Table extends React.Component {
 
       let columns = [];
       attributes.map((one, key) => {
-        let cell = {data: one.name};
+        let cell = {
+          data: one.name,
+          searchable: true
+        };
         if (one.class)
           cell.className = one.class;
         if (one.visible)
@@ -46,6 +49,13 @@ export default class Table extends React.Component {
       let ajax_options = {
         url: schema.ajaxTable.url,
         type: schema.ajaxTable.method,
+        contentType: 'application/json',
+        processData: false,
+        beforeSend: function (jqXHR, settings) {
+          var data = settings.data;
+          data.search.regex = true;
+          settings.data = JSON.stringify(data);
+        }
       }
 
       if (schema.ajaxTable.token) {
@@ -55,13 +65,25 @@ export default class Table extends React.Component {
       }
 
       if (schema.ajaxTable.data) {
-        ajax_options.data = this.convertDataParams(schema, schema.ajaxTable.data);
-        ajax_options.data.lang = 'en';
+        ajax_options.data = _.extend(this.convertDataParams(schema, schema.ajaxTable.data), {lang: localStorage.getItem('lang')});
       }
 
       if (schema.getUrl.data) {
         schema.getUrl.data = this.convertDataParams(schema, schema.getUrl.data)
       }
+
+      let createUrl = schema.createUrl,
+        deleteUrl = schema.deleteUrl,
+        getUrl = schema.getUrl,
+        updateUrl = schema.updateUrl;
+
+      ['deleteUrl', 'createUrl', 'getUrl', 'updateUrl'].map((name) => {
+        if (schema[name].data) {
+          eval(name).data = _.extend(this.convertDataParams(schema, schema[name].data), {lang: localStorage.getItem('lang')});
+        }
+      })
+
+      let table_identifier = '#' + this.props.identifier;
 
       let options = {
         dom: "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs text-right'Bl>r>" +
@@ -73,16 +95,26 @@ export default class Table extends React.Component {
         },
         autoWidth: false,
         stateSave: true,
+        processing: true,
         serverSide: true,
+        search: {
+          regex: true
+        },
         ajax: ajax_options,
         columns: columns,
         buttons: [
           {
+            text: '<i class="fa fa-plus-circle"/> Add',
+            titleAttr: 'Add new record',
+            responsivePriority: 2,
+            className: 'create-record-' + table_identifier
+          },
+          {
             text: '<i class="fa fa-refresh"/> Refresh',
             titleAttr: 'Refresh all data',
             className: 'btn-sm',
-            responsivePriority: 2,
-            action: function ( e, dt, node, config ) {
+            responsivePriority: 3,
+            action: function (e, dt, node, config) {
               this.ajax.reload(null, false);
             }
           },
@@ -92,7 +124,7 @@ export default class Table extends React.Component {
             titleAttr: 'Choose visible column',
             className: 'btn-sm',
             columns: ':not(:last-child)',
-            columnDefs: [ {className: 'select-checkbox',targets:   0}]
+            columnDefs: [{className: 'select-checkbox', targets: 0, visible: false, targets: 1}]
           },
           {
             extend: 'print',
@@ -109,7 +141,6 @@ export default class Table extends React.Component {
         ]
       };
 
-      let table_identifier = '#' + this.props.identifier;
       let button_columns = [{
         orderable: false,
         data: null,
@@ -119,10 +150,10 @@ export default class Table extends React.Component {
           $(cell).parent('tr').attr('data-row-id', id);
           let button = <div className="btn-group">
             <DialogModalButton header="<h4>Editing</h4>" modal={true} edit={true} attributes={attributes} pk={id}
-                               ajax={schema.getUrl} saveAction={schema.updateUrl} tableIdentifier={table_identifier}/>
+                               ajax={getUrl} saveAction={updateUrl} tableIdentifier={table_identifier}/>
             <DialogModalButton header="<h4><i class='fa fa-warning'/> Are you sure do you want to remove?</h4>"
                                modal={true} delete={true} pk={id} tableIdentifier={table_identifier}
-                               ajax={schema.deleteUrl}/>
+                               ajax={deleteUrl}/>
           </div>;
           ReactDOM.render(button, cell);
         },
@@ -133,7 +164,18 @@ export default class Table extends React.Component {
       if (this.props.options) {
         options = $.extend({}, this.props.options, options);
       }
+
       $(table_identifier).DataTable(options);
+
+      let create_button = document.getElementsByClassName('create-record-' + table_identifier)[0];
+      let temp = document.createElement("div");
+      ReactDOM.render(<DialogModalButton header="<h4>Creating</h4>" modal={true} add={true} attributes={attributes}
+                                         className="dt-button" saveAction={createUrl} title="Add"
+                                         titleAttr="Add new record"
+                                         tableIdentifier={table_identifier}/>,
+        temp);
+      temp.setAttribute('class', 'dt-buttons');
+      create_button.replaceWith(temp);
     });
   }
 

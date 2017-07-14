@@ -2,29 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20e0d810-65be-4851-ac0a-20ea34377745" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seed-project/src/app/components/redirect/redirectReducer.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/test.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/app.js" afterPath="$PROJECT_DIR$/seed-project/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/common/Header.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/common/Header.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/navigation/components/NavMenu.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/navigation/components/NavMenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/navigation/navigationReducer.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/navigation/navigationReducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/ui/uiDialog.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/ui/uiDialog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/user/containers/EnsureLoggedIn.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/user/containers/EnsureLoggedIn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/user/userReducer.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/user/userReducer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/config/config.json" afterPath="$PROJECT_DIR$/seed-project/src/app/config/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/config/navigation.json" afterPath="$PROJECT_DIR$/seed-project/src/app/config/navigation.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/upload/ItemUploadTable.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/upload/ItemUploadTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/items/index.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/items/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/GettextsTable.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/GettextsTable.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/category_groups.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/category_groups.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/cats.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/cats.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/coatings.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/coatings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/colours.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/colours.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/countries.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/countries.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/delivery_methods.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/delivery_methods.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/designers.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/designers.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/frames.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/frames.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/test.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/test.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/store/configureStore.js" afterPath="$PROJECT_DIR$/seed-project/src/app/store/configureStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/len_cats.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/len_cats.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/lenses.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/lenses.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/omnis_statuses.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/omnis_statuses.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/page_cats.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/page_cats.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/pages.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/pages.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/payment_systems.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/payment_systems.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use_cats.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use_cats.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tabs.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tabs.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tint_cats.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tint_cats.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tints.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tints.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/user_notifications_msg.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/user_notifications_msg.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/webpack.config.js" afterPath="$PROJECT_DIR$/seed-project/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,23 +51,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NavMenu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/navigation/components/NavMenu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="123" column="7" lean-forward="false" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
-              <folding>
-                <element signature="e#42#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -72,8 +66,8 @@
       <file leaf-file-name="GettextsTable.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/GettextsTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="85">
+              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding>
                 <element signature="e#134#179#0" expanded="true" />
               </folding>
@@ -84,18 +78,18 @@
       <file leaf-file-name="Table.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="119" column="50" lean-forward="true" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
+            <state relative-caret-position="188">
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DialogModalButton.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DialogModalButton.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="-544">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -103,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DialogModalContent.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DialogModalContent.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="153" column="18" lean-forward="true" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -118,8 +112,8 @@
       <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/config/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+            <state relative-caret-position="88">
+              <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -128,8 +122,8 @@
       <file leaf-file-name="gettexts.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+            <state relative-caret-position="394">
+              <caret line="65" column="4" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="67" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -148,42 +142,45 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\n  switch \(action\.type\) \{</find>
-      <find>p</find>
-      <find>pu</find>
-      <find>h</find>
-      <find>ha</find>
-      <find>hashH</find>
-      <find>authorization</find>
-      <find>.</find>
-      <find>.is\d</find>
-      <find>.is\</find>
-      <find>.is</find>
-      <find>.id</find>
-      <find>reduce</find>
-      <find>exclude</find>
-      <find>exclude</find>
-      <find>e</find>
-      <find>_</find>
-      <find>_.e</find>
-      <find>_.encl</find>
-      <find>v</find>
-      <find>valid</find>
-      <find>validate</find>
-      <find>ignoreReadonly</find>
-      <find>showClear</find>
-      <find>Refresh all data</find>
-      <find>unmountComponentAtNode</find>
+      <find>Link Editor</find>
+      <find>Link ditor</find>
+      <find>Linkditor</find>
+      <find>Linditor</find>
+      <find>Linitor</find>
+      <find>Lintor</find>
+      <find>Linor</find>
+      <find>Linr</find>
+      <find>Link</find>
       <find>getValueByName</find>
       <find>DialogModalContent</find>
-      <find>Access-Control-Allow-Methods</find>
-      <find>Access</find>
+      <find>reduce</find>
+      <find>setItem</find>
+      <find>PA</find>
+      <find>P</find>
+      <find>Pa</find>
+      <find>Par</find>
+      <find>J</find>
+      <find>JSO</find>
+      <find>JSON</find>
+      <find>JSON.</find>
+      <find>&quot;name&quot;: &quot;created&quot;</find>
+      <find>&quot;name&quot;: &quot;__service.updated&quot;</find>
+      <find>&quot;name&quot;: &quot;_service.updated&quot;</find>
+      <find>&quot;name&quot;: &quot;_updated&quot;</find>
+      <find>&quot;name&quot;: &quot;updated&quot;</find>
+      <find>&quot;name&quot;: &quot;id&quot;</find>
+      <find>convertDataParams</find>
+      <find>focus</find>
+      <find>createUrl</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
       <replace>this.props</replace>
       <replace>html</replace>
       <replace>className</replace>
+      <replace>&quot;name&quot;: &quot;__service.created&quot;</replace>
+      <replace>&quot;name&quot;: &quot;__service.updated&quot;</replace>
+      <replace>&quot;name&quot;: &quot;_id&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\OpenServer\domains\SmartAdmin\seed-project\src\app\components\table-schema</dir>
@@ -203,26 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/PrescriptionUsedTable.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/PrescUsedCategoriesTable.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/item-upload/containers/ItemUploadTable.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/package-lock.json" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/seed-project/package.json" />
-        <option value="$PROJECT_DIR$/seed-project/package-lock.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/assets/css/dropzone.css" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/images/PreviewLoadTemplate.html" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/images/PreviewLoadTemplate.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/images/ImagesContainer.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Forgot.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/components/utils/getJSON.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/item-upload/ItemUploadTable.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/home/index.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/not-found/containers/Home.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/not-found/index.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/not-found/containers/NotFound.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Logout.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/auth/index.js" />
         <option value="$PROJECT_DIR$/seed-project/node_modules/react-router/es/Router.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/index.js" />
@@ -245,15 +222,35 @@
         <option value="$PROJECT_DIR$/seed-project/src/app/components/navigation/components/NavMenuList.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/navigation/components/NavMenu.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/navigation/navigationReducer.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/test.json" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/GettextsTable.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/category_groups.json" />
+        <option value="$PROJECT_DIR$/seed-project/webpack.config.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/config/config.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/cats.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/coatings.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/category_groups.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/colours.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/countries.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/delivery_methods.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/designers.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/frames.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/len_cats.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/lenses.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/omnis_statuses.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/page_cats.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/pages.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/payment_systems.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use_cats.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tabs.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tint_cats.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tints.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/user_notifications_msg.json" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js" />
       </list>
     </option>
   </component>
@@ -479,62 +476,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seed-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seed-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1049,7 +990,7 @@
       <workItem from="1498552882049" duration="22137000" />
       <workItem from="1499675865836" duration="64348000" />
       <workItem from="1499871268218" duration="2647000" />
-      <workItem from="1499935227810" duration="21691000" />
+      <workItem from="1499935227810" duration="49704000" />
     </task>
     <task id="LOCAL-00001" summary="SS-3089&#10;finished item upload table">
       <created>1496404090303</created>
@@ -1107,11 +1048,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499786751655</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="SmartAdmin&#10;gettexts">
+      <created>1499962403916</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1499962403916</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335901000" />
+    <option name="totallyTimeSpent" value="363914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1190,6 +1138,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1202,7 +1160,8 @@
     <MESSAGE value="SY-164&#10;created module for bulk upload" />
     <MESSAGE value="SmartAdmin&#10;user authorization" />
     <MESSAGE value="SmartAdmin&#10;gettexts" />
-    <option name="LAST_COMMIT_MESSAGE" value="SmartAdmin&#10;gettexts" />
+    <MESSAGE value="SmartAdmin&#10;gettexts finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="SmartAdmin&#10;gettexts finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1211,186 +1170,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/seed-project/src/assets/js/DataTables/DataTables-1.10.15/js/jquery.dataTables.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="142" column="247" lean-forward="false" selection-start-line="142" selection-start-column="247" selection-end-line="142" selection-end-column="247" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/react-router/es/hashHistory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/ui/uiDialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/items/containers/upload/ItemUploadTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/layout/LayoutActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="166" column="63" lean-forward="true" selection-start-line="166" selection-start-column="63" selection-end-line="166" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/layout/layoutReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="121" column="15" lean-forward="false" selection-start-line="121" selection-start-column="15" selection-end-line="121" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/outlook/outlookReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/reflux/AjaxStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/reflux/AjaxActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/voice-control/VoiceMiddleware.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/redirect/RedirectActions.js" />
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/redirect/redirectReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/containers/EnsureLoggedIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/layout/components/LayoutSwitcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="97" column="15" lean-forward="false" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/ribbon/Ribbon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/i18n/LanguageSelector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="33" column="61" lean-forward="true" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/common/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="48" />
-          <folding>
-            <element signature="e#42#67#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/common/Layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/navigation/components/MinifyMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/navigation/components/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/items/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="49" lean-forward="false" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/navigation/NavigationActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1438,14 +1217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/category_groups.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1477,7 +1248,7 @@
         <state relative-caret-position="96">
           <caret line="123" column="7" lean-forward="false" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
           <folding>
-            <element signature="e#42#80#0" expanded="true" />
+            <element signature="e#42#80#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1516,29 +1287,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/user_notifications_msg.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="217" column="14" lean-forward="true" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1550,16 +1303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/GettextsTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#134#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/ui/UiDialogLauncher.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -1568,46 +1311,282 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js">
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="119" column="50" lean-forward="true" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/smartadmin-plugins/bower_components/relayfoods-jquery.sparkline/util/git_add_submodule_references.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="185" column="93" lean-forward="false" selection-start-line="185" selection-start-column="93" selection-end-line="185" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/assets/js/DataTables/pdfmake-0.1.27/build/pdfmake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="21599" column="3669" lean-forward="false" selection-start-line="21599" selection-start-column="3669" selection-end-line="21599" selection-end-column="3669" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="96" column="22" lean-forward="false" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/GettextsTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="e#134#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="20" column="60" lean-forward="true" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/coatings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/cats.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="107" column="5" lean-forward="false" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/category_groups.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/colours.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="112" column="4" lean-forward="true" selection-start-line="112" selection-start-column="4" selection-end-line="114" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/countries.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="54" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/forms/editors/SmartCKEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/delivery_methods.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="60" column="4" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="62" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/designers.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="173" column="24" lean-forward="false" selection-start-line="173" selection-start-column="24" selection-end-line="173" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/frames.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="44" column="19" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        <state relative-caret-position="394">
+          <caret line="65" column="4" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="67" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/config/config.json">
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/len_cats.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        <state relative-caret-position="-440">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js">
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/lenses.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="393">
+          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/omnis_statuses.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/page_cats.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="52" column="24" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/pages.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="87" column="4" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="89" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/payment_systems.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use_cats.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tabs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tint_cats.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tints.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/user_notifications_msg.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="-544">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="153" column="18" lean-forward="true" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

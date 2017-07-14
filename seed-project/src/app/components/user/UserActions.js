@@ -8,6 +8,7 @@ export const USER_ACCESS = 'USER_ACCESS'
 
 export function requestUserInfo() {
   const token = localStorage.getItem('token');
+  localStorage.setItem('lang', 'en');
   return (dispatch) => {
     if (token !== null) {
       return $.ajax({
@@ -90,6 +91,7 @@ export function logoutUser() {
     }).then((data) => {
       if (!data.error) {
         localStorage.removeItem('token');
+        localStorage.removeItem('lang');
         dispatch(authUser({}));
       }
     })

@@ -1,7 +1,7 @@
 {
   "schema": [
     {
-      "name": "id",
+      "name": "_id",
       "type": "hidden",
       "class": "",
       "readonly": false,
@@ -11,7 +11,7 @@
       "priority": 1
     },
     {
-      "name": "created",
+      "name": "__service.created",
       "type": "date",
       "class": "",
       "readonly": true,
@@ -21,7 +21,7 @@
       "priority": 2
     },
     {
-      "name": "updated",
+      "name": "__service.updated",
       "type": "date",
       "class": "",
       "readonly": true,
@@ -31,7 +31,7 @@
       "priority": 3
     },
     {
-      "name": "name",
+      "name": "value.name",
       "type": "html",
       "class": "",
       "readonly": true,
@@ -42,7 +42,7 @@
     },
     {
       "name": "urls",
-      "type": "text",
+      "type": "link",
       "class": "",
       "readonly": true,
       "visible": true,
@@ -51,8 +51,6 @@
       "priority": 6
     }
   ],
-  "getDataAjax" : "",
-  "saveAction" : "",
-  "editUrl" : "",
-  "deleteAction" : ""
+  "datatype": "countries",
+  "pk": "_id"
 }
