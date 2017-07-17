@@ -6,22 +6,24 @@
       "class": "",
       "readonly": false,
       "visible": true,
+      "autoCreate": true,
       "title": "ID",
       "icon": "",
       "priority": 1
     },
     {
       "name": "__service.created",
-      "type": "date",
+      "type": "datetime",
       "class": "",
       "readonly": true,
       "visible": true,
+      "autoCreate": true,
       "title": "Created date",
       "icon": "fa fa-fw fa-calendar"
     },
     {
       "name": "__service.updated",
-      "type": "date",
+      "type": "datetime",
       "class": "",
       "readonly": true,
       "visible": true,

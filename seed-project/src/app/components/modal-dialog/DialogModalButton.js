@@ -31,13 +31,13 @@ export default class DialogModalButton extends React.Component {
     let $dialog = $('<div><p>Loading...</p></div>').dialog({
       title: `<div class="widget-header">${props.header}</div>`,
       width: 800,
-      maxHeight: 400,
       position: {
         my: 'center',
         at: 'center',
         of: window,
         collision: 'fit'
       },
+      resizable: true,
       modal: !!this.props.modal,
       close: function (e) {
         $(this).remove()

@@ -27,7 +27,7 @@ export default class DialogModalContent extends React.Component {
       locale: 'en',
       showTodayButton: true,
       showClear: true,
-      ignoreReadonly: true
+      ignoreReadonly: false
     });
     this.state = {
       attributes: this.props.attributes,
@@ -94,14 +94,19 @@ export default class DialogModalContent extends React.Component {
 
   handleLinkChange(event) {
     const name = event.name;
-    const value = event.getData();
-    let doc = $(value);
-    let links = $('a', doc);
-    let urls = [];
-    for (var i=0; i< links.length; i++) {
-      urls.push(links[i].getAttribute("href"));
+    let value = event.getData();
+
+    var validUrlRegex = /(https?|ftp):\/\/(-\.)?([^\s\/?\.]+\.?)+(\/[^\s]*)?[^\s\.,\"\<\>;](?!.*\1)/ig;
+
+    value = value.replace(validUrlRegex, '$&');
+
+    let doc = $('<div></div>').append(value);
+    value = doc.text();
+    let urls = value.match(validUrlRegex);
+    if (urls === null) {
+      urls = [];
     }
-    _.set(this.state.row, name, urls)
+    _.set(this.state.row, name, Array.from(new Set(urls)));
     this.setState({});
   }
 
@@ -151,14 +156,14 @@ export default class DialogModalContent extends React.Component {
             links = [links];
           }
           links.map(link => {
-            input += '<a href="' + link + '">' + link + '</a>';
+            input += '<p><a href="' + link + '">' + link + '</a></p>';
           })
         }
 
         input = <SmartCKEditor className={className} container={one.name} options={{
           height: '80px',
           toolbar: [{name: 'links', items: ['Link', 'Unlink', 'Anchor']}],
-          language: 'en'
+          language: 'en',
         }} name={one.name} onChange={this.handleLinkChange} defaultValue={input}/>
       }
 
@@ -172,8 +177,10 @@ export default class DialogModalContent extends React.Component {
 
       if (one.type == 'datetime') {
         input = <label className="input-icon-right"><i  className="icon-append fa fa-calendar"/><input
-          type="text" name={one.name} defaultValue={this.getValueByName(one.name)} onChange={this.handleInputChange} data-date-format="DD/MM/YYYY HH:mm:ss" ref="datetime"
-          className={className}/>
+          type="text" name={one.name} defaultValue={this.getValueByName(one.name)}
+          onChange={this.handleInputChange}
+          data-date-format="YYYY-MM-DD HH:mm:ss" ref="datetime"
+          className={className} readOnly={readonly}/>
         </label>;
       }
 

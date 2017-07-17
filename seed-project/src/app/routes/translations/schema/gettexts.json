@@ -13,7 +13,7 @@
     },
     {
       "name": "__service.created",
-      "type": "date",
+      "type": "datetime",
       "class": "",
       "readonly": true,
       "visible": true,
@@ -24,7 +24,7 @@
     },
     {
       "name": "__service.updated",
-      "type": "date",
+      "type": "datetime",
       "class": "",
       "readonly": true,
       "visible": true,

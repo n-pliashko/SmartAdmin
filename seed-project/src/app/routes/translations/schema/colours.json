@@ -16,6 +16,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
+      "autoCreate": true,
       "title": "Created date",
       "icon": "",
       "priority": 2
@@ -26,6 +27,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
+      "autoCreate": true,
       "title": "Updated date",
       "icon": "",
       "priority": 3

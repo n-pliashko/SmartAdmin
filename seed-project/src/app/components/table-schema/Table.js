@@ -11,8 +11,8 @@ export default class Table extends React.Component {
     this.componentDidMount = this.componentDidMount.bind(this);
   }
 
-  convertDataParams(schema, array) {
-    return array.reduce((obj, one) => {
+  convertDataParams(schema, array_data) {
+    return array_data.reduce((obj, one) => {
       obj[one] = schema[one]
       return obj
     }, {})

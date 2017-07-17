@@ -2,7 +2,6 @@ import React from 'react'
 
 import $script from 'scriptjs'
 
-
 export default class SmartCKEditor extends React.Component {
   componentDidMount() {
 
@@ -12,8 +11,8 @@ export default class SmartCKEditor extends React.Component {
       this._editor = CKEDITOR.replace(this.props.container, this.props.options);
 
       let props = this.props;
-      CKEDITOR.on('instanceReady', function (ev) {
-        var editor = ev.editor;
+      this._editor.on('instanceReady', function (ev) {
+       let editor = ev.editor;
         if (props.onChange) {
           editor.on("change", function (e) {
             props.onChange(editor);
@@ -29,6 +28,12 @@ export default class SmartCKEditor extends React.Component {
             props.onBlur(editor);
           });
         }
+
+        $('iframe').contents().click(function(e) {
+          if (typeof e.target.href != 'undefined') {
+            window.open(e.target.href, 'new' + e.screenX);
+          }
+        });
       });
     });
   }

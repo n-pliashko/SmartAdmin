@@ -4,7 +4,7 @@ import LanguageActions from './LanguageActions'
 
 const data = {
     language: {
-        key: "us",
+        key: "en",
         alt: "United States",
         title: "English (US)"
     },
@@ -27,6 +27,7 @@ const LanguageStore = Reflux.createStore({
     },
     setLanguage: function(_lang){
         data.language = _lang
+        localStorage.setItem('lang', _lang.key);
     }
 });
 

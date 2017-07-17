@@ -12,19 +12,21 @@
     },
     {
       "name": "__service.created",
-      "type": "date",
+      "type": "datetime",
       "class": "",
       "readonly": true,
       "visible": true,
+      "autoCreate": true,
       "title": "Created date",
       "icon": "fa fa-fw fa-calendar"
     },
     {
       "name": "__service.updated",
-      "type": "date",
+      "type": "datetime",
       "class": "",
       "readonly": true,
       "visible": true,
+      "autoCreate": true,
       "title": "",
       "icon": "fa fa-fw fa-calendar",
       "priority": 2
