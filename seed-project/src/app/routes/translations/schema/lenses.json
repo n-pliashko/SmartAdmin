@@ -5,7 +5,7 @@
       "type": "hidden",
       "class": "",
       "readonly": false,
-      "visible": true,
+      "visible": false,
       "title": "ID",
       "icon": "",
       "priority": 1
@@ -37,7 +37,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Title",
       "icon": "",
       "priority": 3
     },
@@ -47,7 +47,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Short Description",
       "icon": ""
     },
     {
@@ -56,7 +56,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Long Description",
       "icon": ""
     },
     {

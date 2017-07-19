@@ -17,8 +17,12 @@ const LanguageStore = Reflux.createStore({
     getData: function(){
         return data
     },
-    onInitCompleted: function (_data) {
+    onInitCompleted: function (_data, group_langs) {
         data.languages = _data;
+        let selected_lang = localStorage.getItem('lang') ? localStorage.getItem('lang') : group_langs[0];
+        selected_lang = selected_lang.toLowerCase();
+        localStorage.setItem('lang', selected_lang);
+        data.language = _data.find(obj => obj.key === selected_lang);
         this.trigger(data)
     },
     onSelectCompleted: function (_data) {
@@ -27,7 +31,6 @@ const LanguageStore = Reflux.createStore({
     },
     setLanguage: function(_lang){
         data.language = _lang
-        localStorage.setItem('lang', _lang.key);
     }
 });
 

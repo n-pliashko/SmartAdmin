@@ -11,6 +11,7 @@ import {handleBodyClasses, dumpLayoutToStorage, layoutReducer} from '../componen
 
 import navigationReducer from '../components/navigation/navigationReducer'
 import {userReducer, requestUserInfo} from '../components/user'
+import {languageReducer} from '../components/language'
 import {chatReducer, chatInit} from '../components/chat'
 import {eventsReducer} from '../components/calendar'
 import outlookReducer from '../routes/outlook/outlookReducer'
@@ -20,9 +21,6 @@ import redirectReducer from '../components/redirect/redirectReducer'
 import {voiceReducer, VoiceMiddleware} from '../components/voice-control'
 import {voiceControlOn} from "../components/voice-control/VoiceActions";
 
-const defaultState = {
-  user: {}
-}
 
 export const rootReducer = combineReducers(
   {
@@ -32,9 +30,10 @@ export const rootReducer = combineReducers(
     redirect: redirectReducer,
     outlook: outlookReducer,
     user: userReducer,
+    language: languageReducer,
     chat: chatReducer,
     events: eventsReducer,
-    voice: voiceReducer,
+    voice: voiceReducer
   }
 );
 

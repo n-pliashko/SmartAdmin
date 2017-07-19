@@ -4,8 +4,8 @@
       "name": "_id",
       "type": "hidden",
       "class": "",
-      "readonly": false,
-      "visible": true,
+      "readonly": true,
+      "visible": false,
       "title": "ID",
       "icon": "",
       "priority": 1
@@ -52,6 +52,6 @@
       "priority": 10
     }
   ],
-  "datatype": "len_cats",
+  "datatype": "lens_category",
   "pk": "_id"
 }

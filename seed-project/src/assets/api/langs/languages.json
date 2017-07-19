@@ -20,19 +20,9 @@
         "title": "Deutsch"
     },
     {
-        "key": "jp",
-        "alt": "Japan",
-        "title": "日本語"
-    },
-    {
         "key": "cn",
         "alt": "China",
         "title": "中文"
-    },
-    {
-        "key": "it",
-        "alt": "Italy",
-        "title": "Italiano"
     },
     {
         "key": "pt",

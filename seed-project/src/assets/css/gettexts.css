@@ -1,0 +1,8 @@
+.fleft {
+    float: left;
+}
+
+div.dataTables_filter {
+    width: inherit;
+    float: left!important;
+}

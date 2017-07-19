@@ -4,8 +4,8 @@
       "name": "_id",
       "type": "hidden",
       "class": "",
-      "readonly": false,
-      "visible": true,
+      "readonly": true,
+      "visible": false,
       "title": "ID",
       "icon": "",
       "priority": 1
@@ -17,7 +17,7 @@
       "readonly": true,
       "visible": true,
       "autoCreate": true,
-      "title": "Created date",
+      "title": "Date Created",
       "icon": "fa fa-fw fa-calendar",
       "priority": 2
     },
@@ -28,7 +28,7 @@
       "readonly": true,
       "visible": true,
       "autoCreate": true,
-      "title": "",
+      "title": "Date Updated",
       "icon": "fa fa-fw fa-calendar",
       "priority": 3
     },
@@ -38,7 +38,7 @@
       "class": "",
       "readonly": true,
       "visible": true,
-      "title": "Label",
+      "title": "Name",
       "icon": "",
       "priority": 4
     },

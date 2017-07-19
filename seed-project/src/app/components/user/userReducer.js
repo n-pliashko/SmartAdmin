@@ -3,7 +3,7 @@
  */
 
 
-import { USER_INFO, USER_ACCESS } from './UserActions'
+import { USER_INFO, USER_ACCESS, USER_GROUP } from './UserActions'
 
 export default function userReducer (state = {
 
@@ -13,6 +13,8 @@ export default function userReducer (state = {
       return action.data
     case USER_ACCESS:
       return {...state, accessInfo: action.access}
+    case USER_GROUP:
+      return {...state, groupInfo: action.group}
     default:
       return state
   }

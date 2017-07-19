@@ -15,7 +15,7 @@ import SearchMobile from './SearchMobile'
 import Activities from '../activities/components/Activities'
 import LanguageSelector from '../i18n/LanguageSelector'
 
-import RecentProjects from './RecentProjects'
+import Domains from './Domains'
 
 class Header extends React.Component {
 
@@ -39,7 +39,7 @@ class Header extends React.Component {
         <Activities />
       </div>
 
-      <RecentProjects />
+      <Domains />
       <div className="pull-right"  /*pulled right: nav area*/ >
 
 

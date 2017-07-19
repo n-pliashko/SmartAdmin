@@ -5,10 +5,10 @@ import { hashHistory } from 'react-router';
 class EnsureLoggedIn extends React.Component {
   constructor(props) {
     super(props);
-    const { user } = this.props
+    const { user } = this.props;
     const isLoggingOut = localStorage.getItem('token') === null && _.isEmpty(user);
     this.state = {
-      isLoggingOut: isLoggingOut
+      isLoggingOut: isLoggingOut,
     }
   }
 
@@ -30,7 +30,8 @@ class EnsureLoggedIn extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    user: state.user
+    user: state.user,
+    language: state.language
   }
 }
 

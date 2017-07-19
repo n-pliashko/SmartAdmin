@@ -1,14 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import {connect} from 'react-redux';
 
 import {Stats, BigBreadcrumbs, WidgetGrid, JarvisWidget}  from '../index'
 import DialogModalButton from '../modal-dialog/DialogModalButton'
+import { showDialogError } from '../ui/uiDialog'
 
-export default class Table extends React.Component {
+class Table extends React.Component {
 
   constructor(props) {
     super(props);
     this.componentDidMount = this.componentDidMount.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
+    const {language} = this.props;
+    this.state = {
+      lang: language.language.key,
+      table: null,
+      schema: this.props.schema,
+      regex: true
+    };
   }
 
   convertDataParams(schema, array_data) {
@@ -18,165 +28,207 @@ export default class Table extends React.Component {
     }, {})
   }
 
+  handleInputChange(event) {
+    this.setState({
+      regex: event.target.checked
+    });
+
+    if (this.state.table !== null) {
+      let inputSearch = this.state.table.search();
+      this.state.table.search(inputSearch, event.target.checked).draw();
+    }
+  }
+
+  initDatatble(lang) {
+    const schema = this.state.schema;
+    const attributes = schema.schema;
+
+    let columns = [];
+    attributes.map((one, key) => {
+      let cell = {
+        data: one.name,
+        searchable: true
+      };
+      if (one.class !== 'undefined')
+        cell.className = one.class;
+      if (one.visible !== 'undefined')
+        cell.visible = one.visible;
+      if (one.priority !== 'undefined')
+        cell.responsivePriority = one.priority;
+      columns.push(cell);
+    });
+
+    let ajax_options = {
+      url: schema.ajaxTable.url,
+      type: schema.ajaxTable.method,
+      contentType: 'application/json',
+      processData: false,
+      beforeSend: function (jqXHR, settings) {
+        var data = settings.data;
+        settings.data = JSON.stringify(data);
+      },
+      error: function (xhr, error, thrown) {
+        let message = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : xhr.responseText;
+        showDialogError('Loaded data error', message);
+      }
+    }
+
+    if (schema.ajaxTable.token) {
+      ajax_options.headers = {
+        "Authorization": localStorage.getItem('token')
+      }
+    }
+
+    if (schema.ajaxTable.data) {
+      ajax_options.data = _.extend(this.convertDataParams(schema, schema.ajaxTable.data), {lang: lang});
+    }
+
+    let createUrl, deleteUrl, getUrl, updateUrl;
+
+    ['deleteUrl', 'createUrl', 'getUrl', 'updateUrl'].forEach((name) => {
+      eval(name + ' = ' + JSON.stringify(schema[name]));
+      if (schema[name].data !== undefined) {
+        [name].data = _.extend(this.convertDataParams(schema, schema[name].data), {lang: lang});
+      }
+    })
+
+    const table_identifier = '#' + this.props.identifier;
+
+    let options = {
+      dom: "<'dt-toolbar'<'col-xs-12 col-sm-6' f<'#regex-search-checkbox'>><'col-sm-6 col-xs-12 hidden-xs text-right'Bl>r>" +
+      "t" +
+      "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
+      oLanguage: {
+        sSearch: "<span class='input-group-addon input-sm'><i class='glyphicon glyphicon-search'></i></span> ",
+        sLengthMenu: "_MENU_"
+      },
+      retrieve: true,
+      autoWidth: false,
+      stateSave: true,
+      processing: true,
+      serverSide: true,
+      search: {
+        regex: this.state.regex,
+        smart: false
+      },
+      columnDefs: [
+        {visible: false, targets: 0}
+      ],
+      ajax: ajax_options,
+      columns: columns,
+      buttons: [
+        {
+          text: '<i class="fa fa-plus-circle"/> Add',
+          titleAttr: 'Add new record',
+          responsivePriority: 2,
+          className: 'create-record-' + table_identifier
+        },
+        {
+          text: '<i class="fa fa-refresh"/> Refresh',
+          titleAttr: 'Refresh all data',
+          className: 'btn-sm',
+          responsivePriority: 3,
+          action: function (e, dt, node, config) {
+            this.ajax.reload(null, false);
+          }
+        },
+        {
+          extend: 'colvis',
+          text: '<i class="fa fa-columns"/> Visibility',
+          titleAttr: 'Choose visible column',
+          className: 'btn-sm',
+          columns: ':not(:last-child)',
+        },
+        {
+          extend: 'print',
+          text: '<i class="fa fa-print"/> Print',
+          titleAttr: 'Print all data on current page',
+          autoPrint: false,
+          exportOptions: {
+            columns: ':not(:last-child)',
+            modifier: {
+              page: 'current'
+            }
+          }
+        }
+      ]
+    };
+
+    let button_columns = [{
+      orderable: false,
+      data: null,
+      targets: -1,
+      createdCell: function (cell, cellData) {
+        let id = cellData[schema.pk];
+        $(cell).parent('tr').attr('data-row-id', id);
+        let button = <div className="btn-group">
+          <DialogModalButton header="<h4>Editing</h4>" modal={true} edit={true} attributes={attributes} pk={id}
+                             ajax={getUrl} saveAction={updateUrl} tableIdentifier={table_identifier}/>
+          <DialogModalButton header="<h4><i class='fa fa-warning'/> Are you sure do you want to remove?</h4>"
+                             modal={true} delete={true} pk={id} tableIdentifier={table_identifier}
+                             ajax={deleteUrl}/>
+        </div>;
+        ReactDOM.render(button, cell);
+      },
+      responsivePriority: 1
+    }];
+
+    $.merge(options.columns, button_columns);
+    if (this.props.options) {
+      options = $.extend({}, this.props.options, options);
+    }
+
+    let table = $(table_identifier).DataTable(options);
+
+    table.column(0).visible(false); //invisible ID column
+
+    ReactDOM.render(<label>
+        <input id="regex-search" name="regex" type="checkbox" defaultChecked={this.state.regex} onChange={this.handleInputChange}/>
+        <label htmlFor="regex-search">FullText Search</label>
+      </label>,
+      document.getElementById('regex-search-checkbox'));
+
+    let create_button = document.getElementsByClassName('create-record-' + table_identifier)[0];
+    let temp = document.createElement("div");
+    ReactDOM.render(<DialogModalButton header="<h4>Creating</h4>" modal={true} add={true} attributes={attributes}
+                                       className="dt-button" saveAction={createUrl} title="Add"
+                                       titleAttr="Add new record"
+                                       tableIdentifier={table_identifier}/>,
+      temp);
+    temp.setAttribute('class', 'dt-buttons');
+    create_button.replaceWith(temp);
+
+
+    this.setState({
+      table: table,
+      lang: lang
+    })
+  }
+
   componentDidMount() {
     System.import('script-loader!../../../assets/js/DataTables/datatables').then(() => {
-
       $.extend($.fn.dataTableExt.oStdClasses, {
         "sFilterInput": "form-control input-sm",
         "sLengthSelect": "form-control input-sm"
       });
 
-      let schema = this.props.schema;
-      let attributes = schema.schema;
-
-      let columns = [];
-      attributes.map((one, key) => {
-        let cell = {
-          data: one.name,
-          searchable: true
-        };
-        if (one.class)
-          cell.className = one.class;
-        if (one.visible)
-          cell.visible = one.visible;
-        if (one.priority)
-          cell.responsivePriority = one.priority;
-        columns.push(cell);
-      });
-
-      console.log(localStorage.getItem('token'));
-
-      let ajax_options = {
-        url: schema.ajaxTable.url,
-        type: schema.ajaxTable.method,
-        contentType: 'application/json',
-        processData: false,
-        beforeSend: function (jqXHR, settings) {
-          var data = settings.data;
-          data.search.regex = true;
-          settings.data = JSON.stringify(data);
-        }
-      }
-
-      if (schema.ajaxTable.token) {
-        ajax_options.headers = {
-          "Authorization": localStorage.getItem('token')
-        }
-      }
-
-      if (schema.ajaxTable.data) {
-        ajax_options.data = _.extend(this.convertDataParams(schema, schema.ajaxTable.data), {lang: localStorage.getItem('lang')});
-      }
-
-      if (schema.getUrl.data) {
-        schema.getUrl.data = this.convertDataParams(schema, schema.getUrl.data)
-      }
-
-      let createUrl = schema.createUrl,
-        deleteUrl = schema.deleteUrl,
-        getUrl = schema.getUrl,
-        updateUrl = schema.updateUrl;
-
-      ['deleteUrl', 'createUrl', 'getUrl', 'updateUrl'].map((name) => {
-        if (schema[name].data) {
-          eval(name).data = _.extend(this.convertDataParams(schema, schema[name].data), {lang: localStorage.getItem('lang')});
-        }
-      })
-
-      let table_identifier = '#' + this.props.identifier;
-
-      let options = {
-        dom: "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs text-right'Bl>r>" +
-        "t" +
-        "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
-        oLanguage: {
-          sSearch: "<span class='input-group-addon input-sm'><i class='glyphicon glyphicon-search'></i></span> ",
-          sLengthMenu: "_MENU_"
-        },
-        autoWidth: false,
-        stateSave: true,
-        processing: true,
-        serverSide: true,
-        search: {
-          regex: true
-        },
-        ajax: ajax_options,
-        columns: columns,
-        buttons: [
-          {
-            text: '<i class="fa fa-plus-circle"/> Add',
-            titleAttr: 'Add new record',
-            responsivePriority: 2,
-            className: 'create-record-' + table_identifier
-          },
-          {
-            text: '<i class="fa fa-refresh"/> Refresh',
-            titleAttr: 'Refresh all data',
-            className: 'btn-sm',
-            responsivePriority: 3,
-            action: function (e, dt, node, config) {
-              this.ajax.reload(null, false);
-            }
-          },
-          {
-            extend: 'colvis',
-            text: '<i class="fa fa-columns"/> Visibility',
-            titleAttr: 'Choose visible column',
-            className: 'btn-sm',
-            columns: ':not(:last-child)',
-            columnDefs: [{className: 'select-checkbox', targets: 0, visible: false, targets: 1}]
-          },
-          {
-            extend: 'print',
-            text: '<i class="fa fa-print"/> Print',
-            titleAttr: 'Print all data on current page',
-            autoPrint: false,
-            exportOptions: {
-              columns: ':not(:last-child)',
-              modifier: {
-                page: 'current'
-              }
-            }
-          }
-        ]
-      };
-
-      let button_columns = [{
-        orderable: false,
-        data: null,
-        targets: -1,
-        createdCell: function (cell, cellData) {
-          let id = cellData[schema.pk];
-          $(cell).parent('tr').attr('data-row-id', id);
-          let button = <div className="btn-group">
-            <DialogModalButton header="<h4>Editing</h4>" modal={true} edit={true} attributes={attributes} pk={id}
-                               ajax={getUrl} saveAction={updateUrl} tableIdentifier={table_identifier}/>
-            <DialogModalButton header="<h4><i class='fa fa-warning'/> Are you sure do you want to remove?</h4>"
-                               modal={true} delete={true} pk={id} tableIdentifier={table_identifier}
-                               ajax={deleteUrl}/>
-          </div>;
-          ReactDOM.render(button, cell);
-        },
-        responsivePriority: 1
-      }];
-
-      $.merge(options.columns, button_columns);
-      if (this.props.options) {
-        options = $.extend({}, this.props.options, options);
-      }
-
-      $(table_identifier).DataTable(options);
-
-      let create_button = document.getElementsByClassName('create-record-' + table_identifier)[0];
-      let temp = document.createElement("div");
-      ReactDOM.render(<DialogModalButton header="<h4>Creating</h4>" modal={true} add={true} attributes={attributes}
-                                         className="dt-button" saveAction={createUrl} title="Add"
-                                         titleAttr="Add new record"
-                                         tableIdentifier={table_identifier}/>,
-        temp);
-      temp.setAttribute('class', 'dt-buttons');
-      create_button.replaceWith(temp);
+      const {language} = this.props;
+      const lang = language.language.key;
+      this.initDatatble(lang);
     });
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    const { language } = nextProps;
+    let result = false;
+    if (language.language.key !== nextState.lang) {
+      result = true;
+      if (nextState.table !== null) {
+        nextState.table.destroy();
+      }
+      this.initDatatble(language.language.key);
+    }
+    return result;
   }
 
   render() {
@@ -233,3 +285,10 @@ export default class Table extends React.Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    language: state.language
+  }
+}
+export default connect(mapStateToProps)(Table)

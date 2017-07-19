@@ -4,8 +4,8 @@
       "name": "_id",
       "type": "hidden",
       "class": "",
-      "readonly": false,
-      "visible": true,
+      "readonly": true,
+      "visible": false,
       "autoCreate": true,
       "title": "ID",
       "icon": "",
@@ -18,7 +18,7 @@
       "readonly": true,
       "visible": true,
       "autoCreate": true,
-      "title": "Created date",
+      "title": "Date Created",
       "icon": "fa fa-fw fa-calendar"
     },
     {
@@ -27,7 +27,7 @@
       "class": "",
       "readonly": true,
       "visible": true,
-      "title": "",
+      "title": "Date Updated",
       "icon": "fa fa-fw fa-calendar",
       "priority": 2
     },
@@ -37,7 +37,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Name",
       "icon": "",
       "priority": 3
     },
@@ -47,7 +47,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Heading",
       "icon": ""
     },
     {
@@ -56,13 +56,13 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Description",
       "icon": ""
     },
     {
       "name": "value.meta_title",
       "type": "html",
-      "class": "",
+      "class": "Meta Title",
       "readonly": false,
       "visible": true,
       "title": "",
@@ -74,7 +74,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Meta Description",
       "icon": ""
     },
     {
@@ -83,7 +83,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Category Slug",
       "icon": ""
     },
     {
@@ -92,7 +92,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "",
+      "title": "Site Name",
       "icon": ""
     },
     {
@@ -106,6 +106,6 @@
       "priority": 10
     }
   ],
-  "datatype": "cats",
+  "datatype": "categories",
   "pk": "_id"
 }

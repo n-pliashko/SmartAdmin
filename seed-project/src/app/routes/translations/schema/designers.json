@@ -4,8 +4,9 @@
       "name": "_id",
       "type": "hidden",
       "class": "",
-      "readonly": false,
-      "visible": true,
+      "readonly": true,
+      "visible": false,
+      "autoCreate": true,
       "title": "ID",
       "icon": "",
       "priority": 1
@@ -17,8 +18,8 @@
       "readonly": false,
       "visible": true,
       "autoCreate": true,
-      "title": "Created date",
-      "icon": "",
+      "title": "Created Date",
+      "icon": "fa fa-fw fa-calendar",
       "priority": 2
     },
     {
@@ -28,8 +29,8 @@
       "readonly": false,
       "visible": true,
       "autoCreate": true,
-      "title": "Updated date",
-      "icon": "",
+      "title": "Updated Date",
+      "icon": "fa fa-fw fa-calendar",
       "priority": 3
     },
     {
@@ -38,7 +39,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "Spec_content",
+      "title": "Special Content",
       "icon": "",
       "priority": 4
     },
@@ -68,7 +69,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "header_acc",
+      "title": "Header_acc",
       "icon": "",
       "priority": 7
     },
@@ -88,7 +89,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "header_cl",
+      "title": "Header_cl",
       "icon": "",
       "priority": 9
     },
@@ -148,7 +149,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "Meta title",
+      "title": "Meta Title",
       "icon": "",
       "priority": 11
     },
@@ -158,7 +159,7 @@
       "class": "",
       "readonly": false,
       "visible": true,
-      "title": "Meta description",
+      "title": "Meta Description",
       "icon": "",
       "priority": 11
     },
