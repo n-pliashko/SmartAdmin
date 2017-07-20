@@ -21,9 +21,18 @@ class Header extends React.Component {
 
   onLogout(e) {
     e.preventDefault();
-    let dispatch = this.props.dispatch;
+    const { dispatch } = this.props;
     dispatch(logoutUser());
     hashHistory.push('/login');
+  }
+
+  searchSubmit(e) {
+    e.preventDefault();
+    const { routing } = this.props;
+    hashHistory.push({
+      pathname: routing.locationBeforeTransitions.pathname,
+      search: '?search=' + this.param.value
+    })
   }
 
   render() {
@@ -60,7 +69,7 @@ class Header extends React.Component {
               </li>
               <li className="divider"/>
               <li>
-                <a href="#/views/profile"
+                <a href="/views/profile"
                    className="padding-10 padding-top-0 padding-bottom-0"> <i className="fa fa-user"/>
                   <u>P</u>rofile</a>
               </li>
@@ -99,8 +108,9 @@ class Header extends React.Component {
 
 
         {/* input: search field */}
-        <form action="#/misc/search.html" className="header-search pull-right">
-          <input id="search-fld" type="text" name="param" placeholder="Find reports and more"
+        <form onSubmit={this.searchSubmit.bind(this)} className="header-search pull-right">
+          <input id="search-fld" type="text" name="search" placeholder="Find reports and more"
+                 ref={(input) => this.param = input}
                  data-autocomplete='[
 					"ActionScript",
 					"AppleScript",

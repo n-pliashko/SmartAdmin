@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 
+import config from '../../../../config/config.json'
+
 import {WidgetGrid, JarvisWidget}  from '../../../../components/index'
 import DetailButton from '../../../../components/modal-dialog/DetailButton'
 import Table from './Table'
@@ -29,7 +31,7 @@ export default class ItemUpload extends React.Component {
         },
         autoWidth: false,
         ajax: {
-          url: 'http://ssv4/api/item_upload_info/',
+          url: config.urlHost + 'api/item_upload_info/',
           dataSrc: 'response',
         },
         columns: [
@@ -48,7 +50,7 @@ export default class ItemUpload extends React.Component {
             renderer: function (api, rowIdx, columns) {
               let row = api.rows(rowIdx).data()[0];
               $.ajax({
-                url: 'http://ssv4/api/item_upload_by_hour/',
+                url: config.urlHost + 'api/item_upload_by_hour/',
                 dataType: 'json',
                 cache: false,
                 method: 'GET',
@@ -59,11 +61,13 @@ export default class ItemUpload extends React.Component {
                       let button = React.createElement(DialogModalButton, {
                         header: 'Detail information about items',
                         modal: true,
-                        info:true,
-                        date: row.date_updated+ ' ' + one.hour_updated,
+                        info: true,
+                        ajax: {
+                          url: config.urlHost + 'api/item_upload_detail/',
+                          data: { date: encodeURIComponent(row.date_updated+ ' ' + one.hour_updated)},
+                          method: 'GET'
+                        },
                         customButton: DetailButton,
-                        url: 'http://ssv4/api/item_upload_detail/',
-                        data_url: 'date',
                         template: InfoContent
                       });
                       return (
@@ -87,7 +91,7 @@ export default class ItemUpload extends React.Component {
                   }
                 },
                 error: function (xhr, status, err) {
-                  console.error('http://ssv4/api/item_upload_by_hour/', status, err.toString());
+                  console.error(config.urlHost + 'api/item_upload_by_hour/', status, err.toString());
                 }
               });
 
@@ -101,7 +105,7 @@ export default class ItemUpload extends React.Component {
             text: '<i class="fa fa-refresh"/> Refresh',
             titleAttr: 'Refresh all data',
             className: 'btn-sm',
-            action: function (e, dt, node, config) {
+            action: function (e, dt, node, conf) {
               this.ajax.reload(null, false);
             }
           }

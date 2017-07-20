@@ -11,7 +11,7 @@ $.widget('ui.dialog', $.extend({}, $.ui.dialog.prototype, {
     }
   },
   _allowInteraction: function(event) {
-    return !!$(event.target).closest(".cke_dialog").length || this._super(event);
+    return !!$(event.target).closest(".ui-dialog, .ui-datepicker, [class^=cke_dialog]").length || this._super(event);
   }
 }))
 
@@ -70,14 +70,13 @@ export default class DialogModalButton extends React.Component {
     let ajax_options = {
       url: props.ajax.url,
       dataType: 'JSON',
-      cache: false,
-      contentType: 'application/json',
-      crossDomain: true
+      cache: false
     }
 
     if (props.ajax.token) {
       ajax_options.headers = {
-        'Authorization': localStorage.getItem('token')
+        'Authorization': localStorage.getItem('token'),
+        'Content-Type': 'application/json'
       }
     }
 

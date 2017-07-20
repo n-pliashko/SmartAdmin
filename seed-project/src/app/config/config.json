@@ -1,7 +1,7 @@
 {
   "imageLoadUrl": "http://ssyii/web/site/images",
   "urlApiHost": "http://localhost:3000/api/v.2/",
-  "urlHost": "http://ssv4/",
+  "urlHost": "https://www.selectspecs.com/",
 
   "gettext": {
     "ajaxTable": {

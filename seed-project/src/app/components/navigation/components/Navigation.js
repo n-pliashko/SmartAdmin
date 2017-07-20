@@ -16,7 +16,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <aside id="left-panel">
-        <LoginInfo />
+        <LoginInfo picture="assets/img/avatars/sunny.png"/>
         <nav>
           <NavMenu
             openedSign={'<i class="fa fa-minus-square-o"></i>'}

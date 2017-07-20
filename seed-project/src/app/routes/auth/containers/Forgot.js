@@ -22,15 +22,9 @@ export default class Forgot extends React.Component {
               <div className="col-xs-12 col-sm-12 col-md-7 col-lg-8 hidden-xs hidden-sm">
                 <h1 className="txt-color-red login-header-big">SelectSpecs API administration system</h1>
                 <div className="hero">
-
                   <div className="pull-left login-desc-box-l">
-                    <h4 className="paragraph-header">Developer preview
-                      Modules is working, but unstable sometimes :)</h4>
+                    <img src="assets/img/demo/content-health.jpg" className="pull-right display-image" alt=""/>
                   </div>
-
-                  <img src="assets/img/demo/iphoneview.png" className="pull-right display-image" alt=""
-                       style={{width: '210px'}}/>
-
                 </div>
 
                 <div className="row">
@@ -89,20 +83,6 @@ export default class Forgot extends React.Component {
                   </form>
 
                 </div>
-
-                <h5 className="text-center"> - Or sign in using -</h5>
-
-                <ul className="list-inline text-center">
-                  <li>
-                    <a href="#" className="btn btn-primary btn-circle"><i className="fa fa-facebook"/></a>
-                  </li>
-                  <li>
-                    <a href="#" className="btn btn-info btn-circle"><i className="fa fa-twitter"/></a>
-                  </li>
-                  <li>
-                    <a href="#" className="btn btn-warning btn-circle"><i className="fa fa-linkedin"/></a>
-                  </li>
-                </ul>
 
               </div>
             </div>

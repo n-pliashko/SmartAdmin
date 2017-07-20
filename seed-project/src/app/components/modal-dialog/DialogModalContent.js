@@ -1,7 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
+import React from 'react'
 
-import UiDatepicker from '../forms/inputs/UiDatepicker';
+import UiDatepicker from '../forms/inputs/UiDatepicker'
 import SmartCKEditor from '../../components/forms/editors/SmartCKEditor'
 
 import 'script-loader!eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker'
@@ -23,11 +22,12 @@ export default class DialogModalContent extends React.Component {
   }
 
   componentDidMount() {
-    $(this.refs.datetime).datetimepicker({
+    $('[data-toogle="datetime"]').datetimepicker({
       locale: 'en',
       showTodayButton: true,
       showClear: true,
-      ignoreReadonly: false
+      ignoreReadonly: false,
+      allowInputToggle: true
     });
     this.state = {
       attributes: this.props.attributes,
@@ -37,7 +37,7 @@ export default class DialogModalContent extends React.Component {
   }
 
   componentWillUnmount() {
-    $(this.refs.datetime).datetimepicker('destroy');
+    $('[data-toogle="datetime"]').datetimepicker('destroy');
   }
 
   _submitDialog = (e)=> {
@@ -168,19 +168,21 @@ export default class DialogModalContent extends React.Component {
       }
 
       if (one.type == 'date') {
-        input = <label className="input-icon-right"><i  className="icon-append fa fa-calendar"/><UiDatepicker
-                    name={one.name} value={this.getValueByName(one.name)} onChange={this.handleInputChange}
-                    className={className} changeMonth={true} changeYear={true} readOnly={readonly}
-                    data-date-format="dd/mm/yy"/>
+        input = <label className="input-icon-right"><i className="icon-append fa fa-calendar"/>
+          <UiDatepicker
+            name={one.name} value={this.getValueByName(one.name)} onChange={this.handleInputChange}
+            className={className} changeMonth={true} changeYear={true} readOnly={readonly}
+            data-date-format="dd/mm/yy"/>
         </label>;
       }
 
       if (one.type == 'datetime') {
-        input = <label className="input-icon-right"><i  className="icon-append fa fa-calendar"/><input
-          type="text" name={one.name} defaultValue={this.getValueByName(one.name)}
-          onChange={this.handleInputChange}
-          data-date-format="YYYY-MM-DD HH:mm:ss" ref="datetime"
-          className={className} readOnly={readonly}/>
+        input = <label className="input-icon-right"><i className="icon-append fa fa-calendar"/>
+          <input type="text" name={one.name} defaultValue={this.getValueByName(one.name)}
+                 data-toogle="datetime"
+                 onChange={this.handleInputChange}
+                 data-date-format="YYYY-MM-DD HH:mm:ss"
+                 className={className} readOnly={readonly}/>
         </label>;
       }
 
@@ -196,7 +198,7 @@ export default class DialogModalContent extends React.Component {
       }
 
       return (
-        <div key={key} className="form-group">
+        <div key={key} className="form-group pos-relative">
           {label}
           <div className="col-md-10">
             {input}

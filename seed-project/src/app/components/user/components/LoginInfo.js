@@ -11,13 +11,14 @@ class LoginInfo extends React.Component {
   }
 
   render() {
+    const {user} = this.props;
+    let group_name = user.groupInfo ? user.groupInfo.name : '';
     return (
-
       <div className="login-info">
 			    <span>
 			        <ToggleShortcut>
 			            <img src={this.props.picture} alt="me"
-                       className="online"/><span>{ this.props.username }</span><i className="fa fa-angle-down"/>
+                       className="online"/><span>{ group_name }</span><i className="fa fa-angle-down"/>
 			        </ToggleShortcut>
 			     </span>
       </div>
@@ -25,6 +26,11 @@ class LoginInfo extends React.Component {
   }
 }
 
-const mapStateToProps = (state)=>(state.user)
+function mapStateToProps(state) {
+  return {
+    language: state.language,
+    user: state.user
+  }
+}
 
 export default connect(mapStateToProps)(LoginInfo)

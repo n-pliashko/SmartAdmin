@@ -6,3 +6,7 @@ div.dataTables_filter {
     width: inherit;
     float: left!important;
 }
+
+.pos-relative {
+    position: relative;
+}

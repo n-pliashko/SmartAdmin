@@ -26,7 +26,7 @@ const Domains = React.createClass({
       <div className="project-context hidden-xs dropdown">
 
                 <span className="label">
-                    <Msg phrase="Domains" />
+                    <Msg phrase="Groups (Domains):" />
                 </span>
         <span className="project-selector dropdown-toggle label" data-toggle="dropdown">
                     <Msg phrase="Allowed domains" />

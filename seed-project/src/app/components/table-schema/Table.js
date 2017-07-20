@@ -12,9 +12,10 @@ class Table extends React.Component {
     super(props);
     this.componentDidMount = this.componentDidMount.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
-    const {language} = this.props;
+    const {language, routing} = this.props;
     this.state = {
       lang: language.language.key,
+      search: '',
       table: null,
       schema: this.props.schema,
       regex: true
@@ -35,6 +36,9 @@ class Table extends React.Component {
 
     if (this.state.table !== null) {
       let inputSearch = this.state.table.search();
+      this.setState({
+        search: inputSearch
+      });
       this.state.table.search(inputSearch, event.target.checked).draw();
     }
   }
@@ -212,14 +216,15 @@ class Table extends React.Component {
         "sLengthSelect": "form-control input-sm"
       });
 
-      const {language} = this.props;
+      const {language, routing} = this.props;
       const lang = language.language.key;
       this.initDatatble(lang);
     });
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { language } = nextProps;
+    const { language, routing } = nextProps;
+    let search_text = routing.locationBeforeTransitions.query.search ? routing.locationBeforeTransitions.query.search : '';
     let result = false;
     if (language.language.key !== nextState.lang) {
       result = true;
@@ -227,6 +232,10 @@ class Table extends React.Component {
         nextState.table.destroy();
       }
       this.initDatatble(language.language.key);
+    }
+    if (nextState.table !== null && search_text !== nextState.search) {
+      result = true;
+      nextState.table.search(search_text, nextState.regex).draw();
     }
     return result;
   }
@@ -288,7 +297,8 @@ class Table extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    language: state.language
+    language: state.language,
+    routing: state.routing
   }
 }
 export default connect(mapStateToProps)(Table)

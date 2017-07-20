@@ -19,7 +19,7 @@ class SmallBreadcrumbs extends React.Component {
 
 
 const mapStateToProps = (state, ownProps) => {
-  const {navigation, routing}= state;
+  const {navigation, routing} = state;
   const route = routing.locationBeforeTransitions.pathname;
 
   const titleReducer = (chain, it)=> {
