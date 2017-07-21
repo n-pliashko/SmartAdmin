@@ -2,28 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20e0d810-65be-4851-ac0a-20ea34377745" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seed-project/src/assets/img/demo/content-health.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seed-project/test/helpers/browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seed-project/test/helpers/server.bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seed-project/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/seed-project/test/userReducer.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/buffer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/base.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/classes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/expressions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/flow.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/jsx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/methods.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/modules.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/statements.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/template-literals.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/generators/types.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/node/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/node/parentheses.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/node/whitespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/printer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/source-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/lib/whitespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/dist/source-map.debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/dist/source-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/dist/source-map.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/dist/source-map.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/array-set.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/base64-vlq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/binary-search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/mapping-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/quick-sort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/source-map-consumer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/source-map-generator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/source-node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/lib/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/node_modules/source-map/source-map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/babel-generator/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/parse5/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/parse5/docs/build/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/parse5/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/whatwg-url/node_modules/webidl-conversions/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/whatwg-url/node_modules/webidl-conversions/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/whatwg-url/node_modules/webidl-conversions/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/seed-project/node_modules/whatwg-url/node_modules/webidl-conversions/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/app.js" afterPath="$PROJECT_DIR$/seed-project/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/activities/components/Activities.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/activities/components/Activities.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/chat/ChatActions.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/chat/ChatActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/common/Domains.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/common/Domains.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/common/Header.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/common/Header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/navigation/components/Navigation.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/navigation/components/Navigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/ribbon/SmallBreadcrumbs.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/ribbon/SmallBreadcrumbs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/.babelrc" afterPath="$PROJECT_DIR$/seed-project/.babelrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/node_modules/nwmatcher/package.json" afterPath="$PROJECT_DIR$/seed-project/node_modules/nwmatcher/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/node_modules/nwmatcher/src/nwmatcher-base.js" afterPath="$PROJECT_DIR$/seed-project/node_modules/nwmatcher/src/nwmatcher-base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/node_modules/nwmatcher/src/nwmatcher-noqsa.js" afterPath="$PROJECT_DIR$/seed-project/node_modules/nwmatcher/src/nwmatcher-noqsa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/node_modules/nwmatcher/src/nwmatcher.js" afterPath="$PROJECT_DIR$/seed-project/node_modules/nwmatcher/src/nwmatcher.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/package-lock.json" afterPath="$PROJECT_DIR$/seed-project/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/package.json" afterPath="$PROJECT_DIR$/seed-project/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/forms/validation/UiValidate.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/forms/validation/UiValidate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/user/components/LoginInfo.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/user/components/LoginInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/config/config.json" afterPath="$PROJECT_DIR$/seed-project/src/app/config/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Forgot.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Forgot.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/upload/ItemUploadTable.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/upload/ItemUploadTable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/misc/content/search.html" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/misc/content/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/index.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/assets/css/gettexts.css" afterPath="$PROJECT_DIR$/seed-project/src/assets/css/gettexts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/assets/css/smartadmin-production.min.css" afterPath="$PROJECT_DIR$/seed-project/src/assets/css/smartadmin-production.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/webpack.config.js" afterPath="$PROJECT_DIR$/seed-project/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,35 +85,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/common/Header.js">
+      <file leaf-file-name="UserActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="e#42#67#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1450">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Table.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="221" column="7" lean-forward="true" selection-start-line="221" selection-start-column="7" selection-end-line="221" selection-end-column="7" />
-              <folding>
-                <element signature="n#!!block;n#initDatatble#0;n#Table#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnsureLoggedIn.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/containers/EnsureLoggedIn.js">
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/seed-project/test/test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -80,34 +107,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="2" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configureStore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seed-project/src/app/store/configureStore.js">
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+              <folding>
+                <marker date="1500649215125" expanded="true" signature="5169:5298" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,35 +143,35 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>routing</find>
-      <find>h</find>
-      <find>hash</find>
-      <find>hashH</find>
-      <find>hashHiss</find>
-      <find>hashHis</find>
-      <find>hashHisto</find>
-      <find>hashHistor</find>
-      <find>hashHistory</find>
-      <find>#</find>
-      <find>#/</find>
-      <find>login-info</find>
-      <find>activities</find>
-      <find>activities/</find>
-      <find>a</find>
-      <find>asset</find>
-      <find>l</find>
-      <find>translations</find>
-      <find>ass</find>
-      <find>assets/</find>
-      <find>assets</find>
-      <find>browser</find>
-      <find>browserH</find>
-      <find>browserHis</find>
-      <find>browserHistory</find>
-      <find>cancel-search-js</find>
-      <find>search_text</find>
-      <find>search</find>
-      <find>action</find>
+      <find>Login</find>
+      <find>&lt;Login</find>
+      <find>&lt;Login</find>
+      <find>&lt;Login /&gt;</find>
+      <find>&lt;Login /</find>
+      <find>&lt;</find>
+      <find>/</find>
+      <find>babel</find>
+      <find>/Login</find>
+      <find>jsdom</find>
+      <find>whatwg-url</find>
+      <find>ReactTestUtils</find>
+      <find>react-dom/test-utilsreact-dom/test-utils</find>
+      <find>react-hot-loader</find>
+      <find>style</find>
+      <find>isDev</find>
+      <find>babel-require</find>
+      <find>react-dom</find>
+      <find>enzyme</find>
+      <find>react</find>
+      <find>react-dom/test-utils</find>
+      <find>script-loader!jquery-validation'</find>
+      <find>script-loader!jquery-validation</find>
+      <find>babel-loader</find>
+      <find>createStorage</find>
+      <find>eslint</find>
+      <find>prop</find>
+      <find>’</find>
+      <find>reducer</find>
       <find>params</find>
     </findStrings>
     <replaceStrings>
@@ -165,8 +182,9 @@
       <replace>&quot;name&quot;: &quot;__service.created&quot;</replace>
       <replace>&quot;name&quot;: &quot;__service.updated&quot;</replace>
       <replace>&quot;name&quot;: &quot;_id&quot;</replace>
-      <replace>&quot;type&quot;: &quot;datetime&quot;</replace>
       <replace>/</replace>
+      <replace>&quot;type&quot;: &quot;datetime&quot;</replace>
+      <replace>'</replace>
       <replace>hashHistory</replace>
     </replaceStrings>
     <dirStrings>
@@ -187,16 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/delivery_methods.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/frames.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/len_cats.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/lenses.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/omnis_statuses.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/page_cats.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/pages.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/payment_systems.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use.json" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/presc_use_cats.json" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tabs.json" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tint_cats.json" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/tints.json" />
@@ -209,7 +217,6 @@
         <option value="$PROJECT_DIR$/seed-project/src/app/components/i18n/Msg.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/common/RecentProjects.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/common/Domains.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Register.js" />
         <option value="$PROJECT_DIR$/seed-project/src/assets/css/smartadmin-production.min.css" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Forgot.js" />
@@ -227,27 +234,43 @@
         <option value="$PROJECT_DIR$/seed-project/src/app/components/user/components/ToggleShortcut.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/index.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/chat/ChatActions.js" />
-        <option value="$PROJECT_DIR$/seed-project/webpack.config.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/i18n/LanguageSelector.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/i18n/LanguageActions.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/user/containers/EnsureLoggedIn.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/voice-control/VoiceMiddleware.js" />
-        <option value="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/app.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/GettextsTable.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/common/Header.js" />
         <option value="$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js" />
+        <option value="$PROJECT_DIR$/seed-project/test/helpers/server.bootstrap.js" />
+        <option value="$PROJECT_DIR$/seed-project/webpack.config.js" />
+        <option value="$PROJECT_DIR$/seed-project/.babelrc" />
+        <option value="$PROJECT_DIR$/seed-project/node_modules/enzyme/build/react-compat.js" />
+        <option value="$PROJECT_DIR$/seed-project/package-lock.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/components/forms/validation/UiValidate.js" />
+        <option value="$PROJECT_DIR$/seed-project/package.json" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json" />
+        <option value="$PROJECT_DIR$/seed-project/test/helpers/browser.js" />
+        <option value="$PROJECT_DIR$/seed-project/test/reducer.js" />
+        <option value="$PROJECT_DIR$/seed-project/test/userReducer.js" />
+        <option value="$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js" />
+        <option value="$PROJECT_DIR$/seed-project/test/test.js" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path>$USER_HOME$/AppData/Roaming/npm/bower.cmd</exe-path>
+    <config-path />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
-    <service-enabled>false</service-enabled>
+    <service-enabled>true</service-enabled>
     <exe-path />
     <annotation-enable>false</annotation-enable>
-    <other-services-enabled>false</other-services-enabled>
+    <other-services-enabled>true</other-services-enabled>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -258,6 +281,9 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/seed-project/node_modules" />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -307,6 +333,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="seed-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seed-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,126 +532,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="misc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seed-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seed-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seed-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seed-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -618,7 +542,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../worker-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/seed-project/test" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -630,6 +554,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="C:\Users\natal\AppData\Roaming\npm\node_modules\mocha" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -659,7 +586,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Mocha.&lt;Login/&gt;">
+    <configuration default="false" name="&lt;Login/&gt;" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs>
+        <env name="NODE_ENV" value="test" />
+      </envs>
+      <ui>bdd</ui>
+      <extra-mocha-options>C:\OpenServer\domains\SmartAdmin\seed-project\test\helpers\browser.js</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/seed-project/test/test.js</test-file>
+      <test-names>
+        <name value="&lt;Login/&gt;" />
+      </test-names>
+      <method />
+    </configuration>
+    <configuration default="false" name="User Reducer Test" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs>
+        <env name="NODE_ENV" value="test" />
+      </envs>
+      <ui>bdd</ui>
+      <extra-mocha-options>C:\OpenServer\domains\SmartAdmin\seed-project\test\helpers\browser.js</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/seed-project/test/userReducer.js</test-file>
+      <test-names>
+        <name value="User Reducer Test" />
+      </test-names>
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -1083,12 +1044,13 @@
       <node-options />
       <working-directory />
       <pass-parent-env>true</pass-parent-env>
-      <envs />
+      <envs>
+        <env name="NODE_ENV" value="test" />
+      </envs>
       <ui />
       <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
+      <test-kind>TEST</test-kind>
+      <test-file>test.js</test-file>
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -1097,6 +1059,16 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Mocha.&lt;Login/&gt;" />
+      <item index="1" class="java.lang.String" itemvalue="Mocha.User Reducer Test" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Mocha.&lt;Login/&gt;" />
+        <item index="1" class="java.lang.String" itemvalue="Mocha.User Reducer Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1123,7 +1095,7 @@
       <workItem from="1498552882049" duration="22137000" />
       <workItem from="1499675865836" duration="64348000" />
       <workItem from="1499871268218" duration="2647000" />
-      <workItem from="1499935227810" duration="150727000" />
+      <workItem from="1499935227810" duration="183988000" />
     </task>
     <task id="LOCAL-00001" summary="SS-3089&#10;finished item upload table">
       <created>1496404090303</created>
@@ -1216,11 +1188,50 @@
       <option name="project" value="LOCAL" />
       <updated>1500477464762</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="SmartAdmin&#10;finished create new smart admin">
+      <created>1500558984017</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1500558984017</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="_Login__ - 2017.07.21 at 18h 04m 02s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 04m 15s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 04m 31s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 04m 56s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 05m 22s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 06m 10s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 06m 24s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 07m 08s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 07m 25s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="_Login__ - 2017.07.21 at 18h 08m 07s.xml">
+      <configuration name="&lt;Login/&gt;" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="464937000" />
+    <option name="totallyTimeSpent" value="498198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1243,9 +1254,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35005575" sideWeight="0.5772921" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.4552239" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35005575" sideWeight="0.4227079" order="3" side_tool="false" content_ui="tabs" x="2469" y="381" width="822" height="277" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3489409" sideWeight="0.4227079" order="3" side_tool="false" content_ui="tabs" x="2469" y="381" width="822" height="277" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.282516" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
@@ -1256,7 +1267,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910814" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1292,274 +1303,16 @@
     <MESSAGE value="SmartAdmin&#10;gettexts" />
     <MESSAGE value="SmartAdmin&#10;gettexts finished" />
     <MESSAGE value="SmartAdmin&#10;users group and languages" />
-    <option name="LAST_COMMIT_MESSAGE" value="SmartAdmin&#10;users group and languages" />
+    <MESSAGE value="SmartAdmin&#10;finished create new smart admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="SmartAdmin&#10;finished create new smart admin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/i18n/Msg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/i18n/LanguageStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/language/LanguageActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/common/RecentProjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/common/Domains.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/userReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/len_cats.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/items/containers/images/ImagesContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2308">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/items/containers/upload/Table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/assets/img/demo/content-health.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="155" column="22" lean-forward="true" selection-start-line="155" selection-start-column="22" selection-end-line="168" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Forgot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="24" column="62" lean-forward="true" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/assets/css/smartadmin-production.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="16" column="91698" lean-forward="false" selection-start-line="16" selection-start-column="91698" selection-end-line="16" selection-end-column="91698" />
-          <folding>
-            <element signature="e#72024#72107#2" expanded="false" />
-            <element signature="e#120903#121058#2" expanded="false" />
-            <element signature="e#159663#160958#1" expanded="false" />
-            <element signature="e#173339#174006#2" expanded="false" />
-            <element signature="e#254798#256057#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/items/containers/upload/ItemUploadTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="96" column="34" lean-forward="true" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/items/containers/upload/InfoContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/assets/css/gettexts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="195" column="24" lean-forward="true" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/config/navigation.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/navigation/components/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/misc/containers/Page404.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-839">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/ribbon/SmallBreadcrumbs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/misc/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/components/LoginInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/components/ToggleShortcut.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1576,20 +1329,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="75" column="19" lean-forward="false" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/i18n/LanguageSelector.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1607,24 +1352,6 @@
         <state relative-caret-position="96">
           <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1662,16 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="108" column="26" lean-forward="false" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/containers/GettextsTable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1690,58 +1407,348 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/store/configureStore.js">
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="153">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/app.js">
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="272">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/babel-register/lib/node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="111" column="53" lean-forward="true" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/jsdom/lib/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="104" column="18" lean-forward="true" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/containers/EnsureLoggedIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <marker date="1500549553190" expanded="false" signature="7:107" ph="..." />
+            <marker date="1500549553190" expanded="true" signature="154:607" ph="{...}" />
+            <marker date="1500549553190" expanded="true" signature="177:376" ph="{...}" />
+            <marker date="1500549553190" expanded="true" signature="331:372" ph="{&quot;isLoggingOut&quot;: isLoggingOut...}" />
+            <marker date="1500549553190" expanded="true" signature="401:481" ph="{...}" />
+            <marker date="1500549553190" expanded="true" signature="436:477" ph="{...}" />
+            <marker date="1500549553190" expanded="true" signature="494:605" ph="{...}" />
+            <marker date="1500549553190" expanded="true" signature="529:555" ph="{...}" />
+            <marker date="1500549553190" expanded="true" signature="561:601" ph="{...}" />
+            <marker date="1500549553190" expanded="true" signature="642:711" ph="{...}" />
+            <marker date="1500549553190" expanded="true" signature="653:709" ph="{&quot;user&quot;: state.user...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/react-dom/test-utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/enzyme/src/react-compat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="99" column="43" lean-forward="false" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/test/helpers/server.bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/react/lib/React.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/react/react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/enzyme/build/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/enzyme/build/version.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/react-dom/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="5051" column="25" lean-forward="true" selection-start-line="5051" selection-start-column="25" selection-end-line="5051" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/enzyme/build/react-compat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/script-loader/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="2" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/jquery-validation/dist/jquery.validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/ui/uiDialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/schema/gettexts.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/assets/css/gettexts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="200" column="47" lean-forward="false" selection-start-line="200" selection-start-column="47" selection-end-line="200" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/mock-local-storage/lib/mock-localstorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/forms/validation/UiValidate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/containers/EnsureLoggedIn.js">
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/userReducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/translations/index.js">
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/store/configureStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="136">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/test/helpers/browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/common/Header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/UserActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1450">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/user/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/test/userReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding>
-            <element signature="e#42#67#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seed-project/src/app/components/table-schema/Table.js">
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/enzyme/build/ShallowWrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="221" column="7" lean-forward="true" selection-start-line="221" selection-start-column="7" selection-end-line="221" selection-end-column="7" />
+        <state relative-caret-position="191">
+          <caret line="837" column="27" lean-forward="false" selection-start-line="837" selection-start-column="27" selection-end-line="837" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/node_modules/react-redux/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/auth/containers/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
           <folding>
-            <element signature="n#!!block;n#initDatatble#0;n#Table#0" expanded="false" />
+            <marker date="1500649215125" expanded="true" signature="5169:5298" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seed-project/test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

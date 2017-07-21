@@ -14,5 +14,10 @@
   "plugins": [
     "react-hot-loader/babel"
     //Enables React code to work with HMR.
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": ["react", "es2015", "stage-0"]
+    }
+  }
 }

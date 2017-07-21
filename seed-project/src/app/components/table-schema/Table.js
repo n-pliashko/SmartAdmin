@@ -108,7 +108,6 @@ class Table extends React.Component {
       },
       retrieve: true,
       autoWidth: false,
-      stateSave: true,
       processing: true,
       serverSide: true,
       search: {

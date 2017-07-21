@@ -9,11 +9,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const srcRoot = path.resolve(__dirname, 'src');
 const appRoot = path.resolve(srcRoot, 'app');
 
-
-
 module.exports = (env) => {
 
-  const isDev = env == 'development';
+  const isDev = env == 'development' || env == 'test';
 
   return {
     context: path.resolve(__dirname),
@@ -41,7 +39,7 @@ module.exports = (env) => {
 
           loader: 'babel-loader',
 
-          query:{
+          query: {
             "presets": [
               ["es2015", {"modules": false}],
               //Webpack understands the native import syntax, and uses it for tree shaking
@@ -72,7 +70,7 @@ module.exports = (env) => {
         {
           test: /\.(jpe?g|png|gif)$/,
           loader: 'file-loader',
-          query:{
+          query: {
             name: 'assets/img/[name].[ext]'
           }
         },
@@ -101,7 +99,13 @@ module.exports = (env) => {
       hints: false
     },
     devtool: false, //'eval', //isDev ? 'eval' : 'cheap-source-map',
-
+    externals: {
+      cheerio: 'window',
+      'react/addons': true,
+      'react/lib/ExecutionEnvironment': true,
+      'react/lib/ReactContext': true,
+      'react-addons-test-utils': 'react-dom'
+    },
     plugins: [
       new CleanWebpackPlugin(['dist']),
       new CopyWebpackPlugin([

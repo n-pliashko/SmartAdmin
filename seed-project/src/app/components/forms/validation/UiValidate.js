@@ -1,7 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 
-import 'script-loader!jquery-validation'
+require ('jquery-validation')
 
 import {findDOMNode} from 'react-dom';
 

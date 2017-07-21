@@ -8,7 +8,7 @@ import config from '../../../config/config.json'
 import { requestUserInfo, showErrorAuth } from '../../../components/user/UserActions'
 import { hashHistory } from 'react-router'
 
-class Login extends React.Component {
+export class Login extends React.Component {
 
   constructor(props) {
     super(props);
@@ -107,6 +107,7 @@ class Login extends React.Component {
                             <input type="email" name="email" data-smart-validate-input="" data-required="" data-email=""
                                    data-message-required="Please enter your email address"
                                    data-message-email="Please enter a VALID email address"
+                                   ref="email"
                                    value={this.state.email} onChange={this.handleInputChange}/>
                             <b className="tooltip tooltip-top-right"><i className="fa fa-user txt-color-teal"/>
                               Please enter email address/username</b></label>
