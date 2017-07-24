@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {findDOMNode} from 'react-dom';
 
 import UiValidate from '../../../components/forms/validation/UiValidate'
 import { showDialogError } from '../../../components/ui/uiDialog'
@@ -14,14 +15,16 @@ export class Login extends React.Component {
     super(props);
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      errors: []
     }
-
     this.onLogin = this.onLogin.bind(this);
-    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   onLogin(e) {
+    if (!$(findDOMNode(this.refs.loginForm)).valid()) {
+      return false;
+    }
     e.preventDefault();
     let dispatch = this.props.dispatch;
     let self = this;
@@ -33,6 +36,7 @@ export class Login extends React.Component {
           dispatch(requestUserInfo());
           hashHistory.push('translations/gettexts');
         } else {
+          self.setState({errors: _.extend(self.state.errors, ['Error Authorization', data.error.reason])});
           showDialogError('Error Authorization', data.error.reason);
         }
       }).fail(function (error) {
@@ -51,7 +55,7 @@ export class Login extends React.Component {
   }
 
   render() {
-    const onSubmit = this.onLogin;
+    const self = this;
     return (
       <div id="extr-page">
         <header id="header" className="animated fadeInDown">
@@ -91,12 +95,20 @@ export class Login extends React.Component {
               </div>
               <div className="col-xs-12 col-sm-12 col-md-5 col-lg-4">
                 <div className="well no-padding">
-                  <UiValidate options={{
-                    submitHandler: function(form, event) {
-                      onSubmit(event);
+                  <UiValidate ref="loginForm" options={{
+                    invalidHandler: function(event, validator) {
+                      let errors = [];
+                      if (validator.errorList) {
+                        validator.errorList.map(error => {
+                          errors.push(error.message)
+                        })
+                      }
+                      self.setState({errors: errors});
                     }
                   }}>
-                    <form action="#/translations/gettext" id="login-form" className="smart-form client-form"  method="POST">
+                    <form action="#/translations/gettext" id="login-form"
+                          onSubmit={this.onLogin.bind(this)}
+                          className="smart-form client-form"  method="POST">
                       <header>
                         Sign In
                       </header>
@@ -108,7 +120,7 @@ export class Login extends React.Component {
                                    data-message-required="Please enter your email address"
                                    data-message-email="Please enter a VALID email address"
                                    ref="email"
-                                   value={this.state.email} onChange={this.handleInputChange}/>
+                                   value={this.state.email} onChange={this.handleInputChange.bind(this)}/>
                             <b className="tooltip tooltip-top-right"><i className="fa fa-user txt-color-teal"/>
                               Please enter email address/username</b></label>
                         </section>
@@ -118,7 +130,7 @@ export class Login extends React.Component {
                             <input type="password" name="password" data-smart-validate-input="" data-required=""
                                    data-minlength="3" data-maxnlength="20"
                                    data-message="Please enter your email password"
-                                   value={this.state.password} onChange={this.handleInputChange}/>
+                                   value={this.state.password} onChange={this.handleInputChange.bind(this)}/>
                             <b className="tooltip tooltip-top-right"><i className="fa fa-lock txt-color-teal"/> Enter
                               your password</b> </label>
                           {/*<div className="note">

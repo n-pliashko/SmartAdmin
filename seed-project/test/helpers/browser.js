@@ -6,7 +6,7 @@ require('mock-local-storage');
 
 var exposedProperties = ['window', 'navigator', 'document'];
 
-const dom = new JSDOM('');
+const dom = new JSDOM('<!doctype html><html lang="en"><head></head><body></body></html>');
 
 global.window = dom.window;
 global.document = dom.window.document;

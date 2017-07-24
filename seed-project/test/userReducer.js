@@ -1,5 +1,4 @@
 import React from 'react'
-import { mount, shallow } from 'enzyme';
 import { expect } from 'chai';
 import { userReducer } from '../src/app/components/user'
 
