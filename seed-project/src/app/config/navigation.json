@@ -13,6 +13,11 @@
           "title": "Images",
           "icon": "fa fa-lg fa-fw fa-file-image-o",
           "route": "/items/images"
+        },
+        {
+          "title": "Items Info",
+          "icon": "fa fa-lg fa-fw fa-info",
+          "route": "/items/info"
         }
       ]
     },

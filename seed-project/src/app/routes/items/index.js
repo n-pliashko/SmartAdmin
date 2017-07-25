@@ -1,10 +1,10 @@
 export default {
-  path: '/',
+  path: 'items',
   name:'items',
   component: require('../../components/common/Layout').default,
   childRoutes: [
     {
-      path: 'items/upload',
+      path: 'upload',
       getComponent(nextState, cb){
         System.import('./containers/upload/ItemUploadTable').then((m)=> {
           cb(null, m.default)
@@ -12,9 +12,17 @@ export default {
       }
     },
     {
-      path: 'items/images',
+      path: 'images',
       getComponent(nextState, cb){
         System.import('./containers/images/ImagesContainer').then((m)=> {
+          cb(null, m.default)
+        })
+      }
+    },
+    {
+      path: 'info',
+      getComponent(nextState, cb){
+        System.import('./containers/info/ItemsTable').then((m)=> {
           cb(null, m.default)
         })
       }

@@ -124,9 +124,11 @@ export default class DialogModalButton extends React.Component {
     if (!!props.info) {
       $.ajax(_.extend(ajax_options, {
         success: function (data) {
+          console.log(data, props.tableIdentifier);
           let content = ''
           if (props.template) {
-            content = React.createElement(props.template, {closeDialog: closeDialog, data: data})
+            let component = props.template;
+            content = React.createElement(component.type, {closeDialog: closeDialog, data: data, tableIdentifier: props.tableIdentifier})
           } else {
             content = data.content
           }
@@ -170,7 +172,7 @@ export default class DialogModalButton extends React.Component {
 
     if (!!this.props.info) {
       button =
-        <button className={"btn btn-default" + className} onClick={this.showDialog}><i className="fa fa-info" title={titleAttr}></i> {title}</button>
+        <button className={"btn btn-default" + className} onClick={this.showDialog}><i className="fa fa-eye" title={titleAttr}></i> {title}</button>
     }
 
     if (!!this.props.add) {

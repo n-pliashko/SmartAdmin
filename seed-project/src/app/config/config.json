@@ -1,11 +1,11 @@
 {
   "imageLoadUrl": "http://ssyii/web/site/images",
-  "urlApiHost": "http://localhost:3000/api/v.2/",
+  "urlApiHost": "http://alpha.omnismain.com:3000/api/v.2/",
   "urlHost": "https://www.selectspecs.com/",
 
   "gettext": {
     "ajaxTable": {
-      "url": "http://localhost:3000/api/v.2/gettext/datatable",
+      "url": "http://alpha.omnismain.com:3000/api/v.2/gettext/datatable",
       "method": "POST",
       "data": [
         "datatype"
@@ -13,12 +13,12 @@
       "token": true
     },
     "getUrl": {
-      "url": "http://localhost:3000/api/v.2/gettext/id/:pk",
+      "url": "http://alpha.omnismain.com:3000/api/v.2/gettext/id/:pk",
       "method": "GET",
       "token": true
     },
     "updateUrl": {
-      "url": "http://localhost:3000/api/v.2/gettext/id/:pk",
+      "url": "http://alpha.omnismain.com:3000/api/v.2/gettext/id/:pk",
       "method": "POST",
       "data": [
         "datatype"
@@ -26,7 +26,7 @@
       "token": true
     },
     "createUrl": {
-      "url": "http://localhost:3000/api/v.2/gettext",
+      "url": "http://alpha.omnismain.com:3000/api/v.2/gettext",
       "method": "PUT",
       "token": true,
       "data": [
@@ -34,9 +34,26 @@
       ]
     },
     "deleteUrl": {
-      "url": "http://localhost:3000/api/v.2/gettext/id/:pk",
+      "url": "http://alpha.omnismain.com:3000/api/v.2/gettext/id/:pk",
       "method": "DELETE",
       "token": true
-    }
+    },
+    "edit": true,
+    "create": true
+  },
+  "items_info": {
+    "ajaxTable": {
+      "url": "http://alpha.omnismain.com:3000/api/v.2/item/datatable",
+      "method": "POST",
+      "token": true
+    },
+    "getUrl": {
+      "url": "http://alpha.omnismain.com:3000/api/v.2/item/id/:pk",
+      "method": "GET",
+      "token": true
+    },
+    "info": true,
+    "edit": false,
+    "create": false
   }
 }

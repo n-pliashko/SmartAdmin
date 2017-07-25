@@ -7,8 +7,8 @@
     "build": "./node_modules/.bin/webpack --config webpack.config.js --progress --colors  --env production",
     "build-dev": "./node_modules/.bin/webpack --config webpack.config.js --progress --colors  --env development",
     "dev": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --progress --env development",
-    "test": "./node_modules/.bin/mocha  --require ./test/helpers/server.bootstrap.js ./test/helpers/browser.js test/*.js --reporter progress",
-    "test:watch": "npm run test -- --watch"
+    "test": "./node_modules/.bin/webpack --progress --colors  --config webpack-test.config.js --env testing",
+    "test:watch": "npm run test --watch"
   },
   "repository": {
     "type": "git",
@@ -59,6 +59,7 @@
     "jvectormap": "^2.0.4",
     "lodash": "^4.16.6",
     "markdown": "^0.5.0",
+    "mocha-webpack": "^0.7.0",
     "mock-local-storage": "^1.0.3",
     "morris.js": "^0.5.0",
     "nouislider": "^9.0.0",
@@ -84,6 +85,8 @@
     "superagent": "^3.5.2",
     "then-request": "^2.2.0",
     "to-markdown": "^3.0.1",
+    "webpack-node-externals": "^1.6.0",
+    "webpack-shell-plugin": "^0.5.0",
     "whatwg-url": "^6.1.0"
   },
   "devDependencies": {

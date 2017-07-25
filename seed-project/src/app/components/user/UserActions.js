@@ -40,11 +40,12 @@ export function requestUserInfo() {
 export function getGroupInfo(group_id) {
   const token = localStorage.getItem('token');
   return (dispatch) => {
-    $.get({
+    $.ajax({
       url: config.urlApiHost + 'group/id/' + group_id,
       headers: {
         'Authorization': token
       },
+      method:'GET',
       dataType: 'JSON',
     }).then((data) => {
       dispatch({

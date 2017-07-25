@@ -1,0 +1,58 @@
+{
+  "schema": [
+    {
+      "name": "_id",
+      "type": "hidden",
+      "class": "",
+      "readonly": true,
+      "visible": false,
+      "autoCreate": true,
+      "title": "ID",
+      "icon": "",
+      "priority": 1
+    },
+    {
+      "name": "__service.created",
+      "type": "datetime",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "autoCreate": true,
+      "title": "Date Created",
+      "icon": "fa fa-fw fa-calendar",
+      "priority": 2
+    },
+    {
+      "name": "__service.updated",
+      "type": "datetime",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "autoCreate": true,
+      "title": "Date Updated",
+      "icon": "fa fa-fw fa-calendar",
+      "priority": 3
+    },
+    {
+      "name": "item_number",
+      "type": "text",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "title": "Item Number",
+      "icon": "",
+      "priority": 4
+    },
+    {
+      "name": "designer_name",
+      "type": "link",
+      "class": "",
+      "readonly": true,
+      "visible": true,
+      "title": "Designer Name",
+      "icon": "",
+      "priority": 6
+    }
+  ],
+  "pk": "_id"
+}
