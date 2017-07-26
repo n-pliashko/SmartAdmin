@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20e0d810-65be-4851-ac0a-20ea34377745" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ReactJS_15.x.iml" afterPath="$PROJECT_DIR$/.idea/ReactJS_15.x.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js" afterPath="$PROJECT_DIR$/seed-project/src/app/components/modal-dialog/DialogModalButton.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/info/ItemsTable.js" afterPath="$PROJECT_DIR$/seed-project/src/app/routes/items/containers/info/ItemsTable.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +37,8 @@
       <file leaf-file-name="ItemsTable.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/items/containers/info/ItemsTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="118" column="23" lean-forward="true" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+            <state relative-caret-position="342">
+              <caret line="215" column="40" lean-forward="false" selection-start-line="215" selection-start-column="40" selection-end-line="215" selection-end-column="40" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -1107,7 +1105,7 @@
       <workItem from="1499675865836" duration="64348000" />
       <workItem from="1499871268218" duration="2647000" />
       <workItem from="1499935227810" duration="212819000" />
-      <workItem from="1500971724812" duration="34972000" />
+      <workItem from="1500971724812" duration="35092000" />
     </task>
     <task id="LOCAL-00001" summary="SS-3089&#10;finished item upload table">
       <created>1496404090303</created>
@@ -1221,7 +1219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500912068346</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="SmartAdmin&#10;items info">
+      <created>1501063667576</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1501063667576</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1257,7 +1262,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="562001000" />
+    <option name="totallyTimeSpent" value="562121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1758,8 +1763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seed-project/src/app/routes/items/containers/info/ItemsTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="118" column="23" lean-forward="true" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+        <state relative-caret-position="342">
+          <caret line="215" column="40" lean-forward="false" selection-start-line="215" selection-start-column="40" selection-end-line="215" selection-end-column="40" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

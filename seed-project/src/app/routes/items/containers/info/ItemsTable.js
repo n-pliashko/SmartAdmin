@@ -205,7 +205,7 @@ export class ItemsTable extends React.Component {
           }
         ],
         buttons: buttons,
-        order: [[ 1, 'desc' ]]
+        order: [[ 2, 'desc' ]]
       };
 
       let table = $(table_identifier).DataTable(options);
