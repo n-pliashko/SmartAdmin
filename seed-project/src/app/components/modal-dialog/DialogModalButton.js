@@ -31,6 +31,7 @@ export default class DialogModalButton extends React.Component {
     let $dialog = $('<div><p>Loading...</p></div>').dialog({
       title: `<div class="widget-header">${props.header}</div>`,
       width: 800,
+      maxHeight: 500,
       position: {
         my: 'center',
         at: 'center',
@@ -124,7 +125,6 @@ export default class DialogModalButton extends React.Component {
     if (!!props.info) {
       $.ajax(_.extend(ajax_options, {
         success: function (data) {
-          console.log(data, props.tableIdentifier);
           let content = ''
           if (props.template) {
             let component = props.template;
